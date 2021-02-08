@@ -1,0 +1,248 @@
+.section {
+    overflow-y: auto;
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    margin: 1.5rem auto;
+    overflow-x: hidden;
+}
+
+.notes {
+    font-size: 1.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+h2.center, h3.center, h4.center {
+
+    margin: 0 auto;
+}
+
+h1.capitalize,
+h2.capitalize,
+h3.capitalize,
+h4.capitalize {
+    text-transform: capitalize;
+}
+
+h1.lowercase,
+h2.lowercase,
+h3.lowercase,
+h4.lowercase {
+    text-transform: lowercase;
+}
+
+h1.sentence,
+h2.sentence,
+h3.sentence,
+h4.sentence {
+    text-transform: none;
+}
+
+p,
+h2 {
+    text-align: left;
+    margin-top: 1.5rem;
+    width: 90%;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ul li,
+ul li a,
+ol li {
+    width: 100%;
+}
+
+ol li {
+    margin-left: 1.5rem;
+}
+
+code {
+    color: #ff357c;
+    word-wrap: break-word;
+}
+
+[data-javascript] {
+    color: pink;
+}
+
+strong {
+    color: #ffd166;
+}
+
+/* slide 2 */
+.change-color {
+    background: red;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.btn {
+    margin: 1.5rem auto;
+    text-align: center;
+    display: flex;
+    padding: 5px 10px;
+}
+
+/* styling fro toggleSrc hiddenCan/VisibleCan src attribute */
+#imageBtn {
+    padding: 10px;
+    font-size: 2.25rem;
+    background: #e50098;
+    color: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    margin: 1.25rem 0;
+}
+
+input {
+    padding: 8px;
+}
+
+[placeholder] {
+    font-size: 1.2rem;
+}
+
+#submit,
+#submit1 {
+    padding: 5px 10px;
+    font-size: 1.25rem;
+}
+
+/* styling for form example using Constraint Validation API */
+
+.wrapper {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #228b22;
+}
+
+form {
+    margin: 40px auto;
+    background: #ffc600;
+    width: 75%;
+    padding: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    /* width: 200px;
+    height: 20px; */
+    color: #228b22;
+    -webkit-appearance: none;
+    font-size: 0.9rem;
+}
+
+input[name="username"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #228b22;
+}
+
+input[name="username"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #228b22;
+}
+
+input[name="username"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #228b22;
+}
+
+input[name="username"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #228b22;
+}
+
+input[name="mail"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #228b22;
+}
+
+input[name="mail"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #228b22;
+}
+
+input[name="mail"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #228b22;
+}
+
+input[name="mail"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #228b22;
+}
+
+input[name="password"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #228b22;
+}
+
+input[name="password"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #228b22;
+}
+
+input[name="password"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #228b22;
+}
+
+input[name="password"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #228b22;
+}
+
+button,
+#btnSubmit {
+    margin: 20px auto;
+    color: #228b22;
+    background: #caff70;
+    letter-spacing: 0.1em;
+    border: 2px dashed #228b22;
+    font-size: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #333;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+}
+
+img {
+    width: 100%;
+}
+
+/*  Intellectual Property Styling */
+/* Milo Thatch Color Palette */
+
+sup {
+    color: #ffa700;
+}
+
+sup.sup {
+    font-size: larger;
+}
+
+cite {
+    color: #a10ebd;
+}
