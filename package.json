@@ -1,0 +1,24 @@
+{
+  "name": "sectioning-html",
+  "version": "1.0.0",
+  "description": "Sectioning HTML documents",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "reveal-md": "^5.0.0"
+  },
+  "scripts": {
+    "slides": "npx reveal-md sectioning-html.md",
+    "customcss": "npx reveal-md sectioning-html.md -w --css custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/sectioning-html.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/sectioning-html/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/sectioning-html#readme"
+}
