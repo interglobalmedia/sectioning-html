@@ -372,6 +372,45 @@ On a `portfolio site`, ***however***, one ***should*** keep it as ***simple*** a
 ---
 
 <section class="section">
+    <h2 class="sentence">Adding an external style sheet to the head element</h2>
+    
+***So far***, we ***have*** been ***styling*** our `HTML document` ***mostly using*** the `internal style` ***approach***, which ***consists*** of ***placing*** `CSS` ***within*** the `style element` ***located*** in the `head element` of the `document`.
+
+***However***, this is ***not*** the ***best approach***. It would ***mean*** `copying` and `pasting` that `style element` and its ***associated*** `CSS` into ***each page*** on the `site`. That ***means*** `repetition`, which ***affects*** the ***performance*** of the ***site***. ***Extra*** or ***repetitive*** `CSS` ***slows down*** the ***loading*** of ***pages***. The ***more*** `CSS` ***code*** there is to ***load***, the ***longer*** it ***takes***! This could ***result*** in `visitors` ***leaving*** the ***site***, because they ***don't want*** to ***waste time*** `waiting` for the ***page***(s) to ***complete*** `loading` the `assets` onto the ***page***.
+
+To ***avoid*** these ***issues***, we can ***add*** a `link` to an ***external*** `style sheet` which can be ***added*** to the `head element` of ***each page***. For example, we can do the following:
+
+```html
+<link rel="stylesheet" href="main.css">
+```
+
+This `link element/tag` can be ***placed*** right under the `title element` ***located*** in the `head element` of the `HTML document`. ***Having*** an ***external*** `style sheet` ***also*** makes ***adding changes*** to the `CSS` ***much easier*** to `track` and `manage`!
+
+If you ***want*** to ***get*** `fancier` and ***more*** `organized`, you can ***add*** a `styles folder` to the ***root*** of your `project folder`, and ***place*** your `main.css` file ***inside***. You would then ***need*** to ***make*** a ***change*** to your `link element`, ***pointing*** the `main.css` ***file*** to ***that*** `folder`:
+
+```html
+<link rel="stylesheet" href="styles/main.css">
+```
+
+The `path` to ***this*** `main.css` ***file*** is ***relative*** to the `location` of the `index.html` ***file*** at the ***root*** of your `project folder`.
+
+
+***Everyone***, please ***add*** a `styles folder` to the `root` of your `project folder`. ***As*** a ***result***, your `folder/file` ***hierarchy*** of your `project folder` ***contents*** on your `computer` should ***look*** something like ***this***:
+
+```shell
+- project-folder/
+  - index.html
+  - styles/
+    - main.css
+```
+
+Now ***all pages*** of `your site` ***can*** be ***styled*** with the ***same*** `link element` ***just*** by ***adding*** it to the `head element` of ***each page***! In ***order*** to ***make*** this ***happen***, you ***have*** to `cut` and `paste` the `contents` of the `style element` ***into*** the `main.css` ***file***, and then ***remove*** the `style element` itself ***from*** the `head element`. It ***now*** is ***no longer*** `necessary` to ***have*** the `style element` ***there***!
+
+</section>
+
+---
+
+<section class="section">
     <h2 class="sentence">Related Resources</h2>
     
 + [Using HTML sections and outlines: MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines)
