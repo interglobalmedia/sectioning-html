@@ -7,17 +7,17 @@
 <section class="section">
     <h2 class="sentence">What sectioning "means" for HTML5 documents</h2>
     
-The [`HTML5 specification`](https://html.spec.whatwg.org/multipage/#toc-introduction) `introduced` ***several*** `semantic sectioning elements` to ***help organize*** the `structure of documents`.
+The [`HTML5 specification`](https://html.spec.whatwg.org/multipage/#toc-introduction) `introduced` ***several*** `semantic sectioning elements` to ***help organize*** the `structure` ***of*** `documents`.
 
 `Semantic sectioning elements` are ***specifically*** `designed` to ***communicate*** `structural meaning` to `browsers` and ***other*** `technologies` ***interpreting*** the `document` on ***behalf*** of `users`, ***such as*** `screen readers` and `voice assistants`.
 
-`Semantic sectioning elements` ***clarify*** the ***larger-scale*** `structures` ***within*** a `document`. They are ***intended*** to `enhance` the ***limited*** `semantics` of ***earlier versions*** of `HTML`, which included ***only*** the `div element` as a ***generic mechanism*** for ***grouping*** `related content`. For ***example***, `<div class="navigation"></div>` does ***not*** `hint` at ***any meaning*** about its `content` to a `browser`. ***Only*** a ***human*** `reading` the `HTML source markup` in the `Elements tab` in `Chrome Developer Tools `(or ***some other*** `browser`) could ***figure out*** what the `element` ***means*** because of the `.navigation` ***class***.
+`Semantic sectioning elements` ***clarify*** the ***larger-scale*** `structures` ***within*** a `document`. They are ***intended*** to `enhance` the ***limited*** `semantics` of ***earlier versions*** of `HTML`, `which included` ***only*** the `div element` as a ***generic mechanism*** for ***grouping*** `related content`. For ***example***, `<div class="navigation"></div>` does ***not*** `hint` at ***any meaning*** about its `content` to a `browser`. ***Only*** a ***human*** `reading` the `HTML source markup` in the `Elements tab` in `Chrome Developer Tools `(or ***some other*** `browser`) could `figure out` the ***purpose*** of the `element` ***because*** of the `.navigation` ***class***.
 
-On the ***other*** hand, the `nav` *`section element`* ***more clearly*** `describes` to `browsers` and ***other*** `devices` the `content` ***contained*** therein, like `links` or ***other*** `navigational structures` to ***help*** `users` ***move through*** the `site` and ***understand*** where they ***are*** in the `site`'s or `page`'s ***content***. 
+On the ***other hand***, the `nav` *`section element`* ***more clearly*** `describes` to `browsers` and ***other*** `devices` the `content` ***contained therein***, ***like*** `links` or ***other*** `navigational structures` to ***help*** `users` ***move through*** the `site` and ***understand*** where they ***are*** in the `site`'s or `page`'s ***content***. 
 
 ***New*** `semantic elements` were ***added*** to `HTML5 `to ***improve*** and ***clarify*** the `sectioning` of `web sites` into ***meaningful*** `areas` of `content`.
 
-***According*** to `MDN` in their `documentation` ***entitled*** [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines),
+***According*** to `MDN` in ***their*** `documentation` ***entitled*** [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines),
 
 > Many accessibility tools as well as reader views provided by some browsers rely on semantic sectioning elements. So don't (simply) swap out an existing tangle of `<div>` elements for a bunch of `<section>` elements.
 > -- <cite>[Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines) -- MDN</cite>
@@ -29,13 +29,13 @@ On the ***other*** hand, the `nav` *`section element`* ***more clearly*** `descr
 <section class="section">
     <h2 class="sentence">Semantic section elements in HTML5</h2>
     
-`nav element` (***aka*** `HTML navigational element`): ***defines*** a `section` that ***contains*** `navigation links` that ***usually appear*** on a `site`. There can be ***primary*** and ***secondary*** `menus`, but a `nav element` ***cannot*** be ***nested*** inside ***another*** `nav element`.
+`nav element` (***aka*** `HTML navigational element`): ***defines*** a `section` that ***contains*** `navigation links` that ***usually appear*** on a `site`. There ***can*** be `primary` and `secondary menus`, but a `nav element` ***cannot*** be ***nested*** inside ***another*** `nav element`.
 
-`article element` (***aka*** `HTML article element`): ***defines*** a ***piece*** of `self-contained content`. It does ***not*** **only refer** to the `main content`, and **can** be ***used*** for `comments` and `widgets` as ***well***.
+`article element` (***aka*** `HTML article element`): ***defines*** a ***piece*** of `self-contained content`. It ***does not*** only ***refer*** to the ***main content***, and **can** be ***used*** for `comments` and `widgets` as ***well***.
 
 `section element` (***aka*** `HTML section element`): ***defines*** a `section` of a `document` to ***indicate*** a ***related*** `grouping` of ***semantic*** `meaning`. It ***makes sense*** to ***use*** the `section element` to ***provide*** `extra context` for the `parent element`.
 
-`aside element` (***aka*** `HTML aside element`): ***defines*** a `section` ***that***, though ***related*** to the `main element` (`content`), does ***not belong*** to the `main flow,` i.e., an `explanation/description box` or an `advertisement`. The `aside element` ***has*** its ***own*** `outline`, and ***doesn't belong*** to the ***main*** one.
+`aside element` (***aka*** `HTML aside element`): ***defines*** a `section` ***that***, ***though related*** to the ***main element*** (`content`), ***does not*** `belong` to the ***main flow***, i.e., an `explanation/description box` or an `advertisement`. The `aside element` ***has*** its ***own*** `outline`, and ***doesn't belong*** to the ***main*** one.
 
 </section>
 
@@ -44,13 +44,14 @@ On the ***other*** hand, the `nav` *`section element`* ***more clearly*** `descr
 <section class="section">
     <h2 class="sentence">Other semantic elements used for sectioning</h2>
     
-`body element` (***aka*** `HTNL body element`): ***defines*** the `content` of a `document`. It contains ***all*** the `content` (***what*** is ***between*** the ***tags***) and `HTML tags` (`elements`).
+`body element` (***aka*** `HTML body element`): ***defines*** the `content` of a `document`. It `contains` ***all*** the `content` (***what*** is ***between*** the ***tags***) and `HTML tags` (`elements`).
 
-`header element` (***aka*** `HTML header element`): ***defines*** a `page area` that ***typically*** `contains` a `logo,` `title`, and `navigation`. The `header` can ***also*** be `used` inside ***other*** `semantic elements` ***such as*** `article` or `section`. A `section header` ***might contain*** the `section`'s ***heading***, ***author name***, etc. `article`, `section`, `aside`, and `nav` can have ***their own*** `header`. ***Despite*** the ***name***, the `header` is ***not necessarily*** `positioned` at the ***beginning*** of a `page` or `section`.
+`header element` (***aka*** `HTML header element`): ***defines*** a `page area` that ***typically*** `contains` a `logo,` `title`, and `navigation`. The `header` ***can also*** be ***used*** inside ***other*** `semantic elements` ***such as*** `article` or `section`. A `section header` ***might contain*** the `section`'s ***heading***, ***author name***, etc. `article`, `section`, `aside`, ***and*** `nav` can have ***their own*** `header`. ***Despite*** the ***name***, the `header` is ***not necessarily*** `positioned` at the ***beginning*** of a `page` or `section`.
 
-`footer element` (***aka*** `HTML footer element`): ***defines*** a `page footer`, which ***typically*** contains `copyright` or `legal notices`, and ***sometimes*** some `links`. As ***regards*** a `section`, a `footer` ***might contain*** the ***sectioned*** `content`'s `publication date`, `license information`, etc. `article`, `section`, `aside`, and `nav` can have ***their own*** `footer`. ***Despite*** its ***name***, the `foote`r is ***not necessarily*** `positioned` at the ***end*** of a `section` (or `page`). 
+`footer element` (***aka*** `HTML footer element`): ***defines*** a `page footer`, ***which typically*** contains `copyright` or `legal notices`, and ***sometimes*** some `links`. As ***regards*** a `section`, a `footer` ***might contain*** the ***sectioned*** `content`'s `publication date`, `license information`, etc. `article`, `section`, `aside`, and `nav` ***can*** have their ***own*** `footer`. ***Despite*** its ***name***, the `foote`r is ***not necessarily*** `positioned` at the ***end*** of a `section` (or `page`). 
+`footer element` (***aka*** `HTML footer element`): ***defines*** a `page footer`, ***which typically*** contains `copyright` or `legal notices`, and ***sometimes*** some `links`. As ***regards*** a `section`, a `footer` ***might contain*** the ***sectioned*** `content`'s `publication date`, `license information`, etc. `article`, `section`, `aside`, and `nav` ***can*** have their ***own*** `footer`. ***Despite*** its ***name***, the `footer` is ***not necessarily*** `positioned` at the ***end*** of a `section` (or ***page***). 
 
-In ***order*** to ***see examples*** of `sectional elements` and ***how ***they ***work***, we can ***visit*** [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines) on `MDN`.
+In ***order*** to see ***examples*** of `sectional elements` and ***how*** they ***work***, we can ***visit*** [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines) on `MDN`.
 </section>
 
 ---
@@ -60,7 +61,7 @@ In ***order*** to ***see examples*** of `sectional elements` and ***how ***they 
     
 The `nav element` ***indicates*** a `navigation block` and ***should*** be ***used*** for ***major*** `navigational menus` (i.e., ***major*** `sections` (`pages`) of a `web site`).
 
-***Example*** of a ***basic*** `navigation` ***using*** the `links` that will ***populate*** your `portfolio/resume sites` which you will ***complete*** by the ***end*** of the **course**:
+***Example*** of a ***basic*** `navigation` ***using*** the ***links*** that will ***populate*** your `portfolio/resume sites` ***which*** you ***will complete*** by the ***end*** of the `course`:
 
 ```html
 <nav>
@@ -84,7 +85,7 @@ The `nav element` ***indicates*** a `navigation block` and ***should*** be ***us
 </nav>
 ```
 
-***More often*** than ***not***, and as shown ***above***, the `ul element` ( ***aka*** `unordered element`) is `used` to ***encapsulate*** the `navigation links`, and the `li element` (***aka*** `list element`) is `used` to ***encapsulate*** the ***individual*** `navigation link`. ***However***, a `li element` ***alone*** won't ***do*** the ***trick***. It ***has*** to ***wrap around*** the `a element` which ***contains*** the `url` to the ***targeted page*** on a `web site`.
+***More often*** than ***not***, and as ***shown above***, the `ul element` ( ***aka*** `unordered element`) is `used` to ***encapsulate*** the `navigation links`, and the `li element` (***aka*** `list element`) is `used` to ***encapsulate*** the ***individual*** `navigation link`. ***However***, a `li element` ***alone*** won't ***do*** the ***trick***. It ***has*** to ***wrap around*** the `a element` which ***contains*** the `url` to the ***targeted page*** on a `web site`.
 
 </section>
 
@@ -93,9 +94,9 @@ The `nav element` ***indicates*** a `navigation block` and ***should*** be ***us
 <section class="section">
     <h2 class="sentence">The nav element and the ul element</h2>
     
-A `ul element` is ***nested inside*** a `nav element` so it can ***provide*** `structure` to the `li elements` which ***contain*** the `links` to ***pages*** on a `web site`.
+A `ul element` is ***nested inside*** a `nav element` so it ***can provide*** `structure` to the `li elements` ***which contain*** the `links` to ***pages*** on a `web site`.
 
-`ul element`: ***represents*** an `unordered list` of ***items***, ***rendered*** as a `bulleted list` (`disc` value for ***list-style-type*** `CSS property`) by ***default***.
+`ul element`: ***represents*** an `unordered list` of ***items***, ***rendered*** as a `bulleted list` (***the*** `disc value` for ***list-style-type*** `CSS property`) by ***default***.
 
 `ul element type attribute`: ***sets*** the `bullet style` for the ***list***. The `values` ***defined*** under `HTML3.2` and the ***transitional version*** of `HTML 4.0/4.01` ***are***:
 
@@ -107,15 +108,15 @@ A `ul element` is ***nested inside*** a `nav element` so it can ***provide*** `s
 
 A ***fourth*** `type` has been ***defined*** in the [WebTV interface](http://sep.stanford.edu/sep/jon/family/jos/webtv/developer3/authoring/sysgde/Default.htm), but ***not all*** `browsers` ***support*** it. It is the `triangle` ***value*** for the ***list-style-type*** `CSS property`.
 
-If ***no*** `type attribute` is ***defined*** in the `ul element` ***opening tag***, and if ***no*** `list-style-type property`  is ***applied*** to the `ul element`, the `user-agent` ***selects*** a `bullet type` ***depending*** on the `nesting level` of the `li` (***list***) `element`.
+If ***no*** `type attribute` is ***defined*** in the `ul element` ***opening tag***, and if ***no*** `list-style-type property`  is ***applied*** to the `ul element`, the `user-agent` ***selects*** a `bullet type` ***depending*** on the `nesting level` of the `li` (***list item***) `element`.
 
-**Warning**: the `ul element` *`type attribute`* with the `value` of `circle`, `disc`, or `square`, has been ***deprecated***. One ***should use*** the `CSS list-style-type property` ***instead***.
+**Warning**: the `ul element` ***type attribute*** with the `value` of `circle`, `disc`, or `square`, has been ***deprecated***. One ***should use*** the `CSS list-style-type property` ***instead***.
 
 `ul element` ***usage***: ***used*** for `grouping` a `collection` of ***items*** that ***do not*** `have` a `numerical ordering`, and ***their order*** in the `list` is ***meaningless***.
 
 The `ul element` can be ***nested*** as ***deeply*** as ***needed*** or ***desired***. 
 
-To ***view*** `examples` of ***unordered lists***, please ***visit*** the [The Unordered List Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) on `MDN`.
+To ***view examples*** of `unordered lists`, please ***visit*** the [The Unordered List Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) on `MDN`.
 
 </section>
 
@@ -124,7 +125,7 @@ To ***view*** `examples` of ***unordered lists***, please ***visit*** the [The U
 <section class="section">
     <h2 class="sentence">The ul element and the li element</h2>
     
-[li element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li): is ***used*** to ***represent*** an `item` in a `list`. It ***must*** be ***contained*** in a `parent element`: an `ordered list` (`ol`), ***or*** an `unordered list` (`ul`). In `unordered lists`, `list items` are ***usually displayed*** using ***bullet points***.
+[li element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li): is ***used*** to ***represent*** an `item` in a `list`. It ***must*** be ***contained*** in a `parent element`: an `ordered list` (`ol`), ***or*** an `unordered list` (`ul`). In ***unordered lists***, `list items` are ***usually displayed*** using `bullet points`.
 </section>
 
 ---
@@ -143,7 +144,7 @@ To ***view*** `examples` of ***unordered lists***, please ***visit*** the [The U
 <section class="section">
     <h2 class="sentence">Commonly used a element attributes</h2>
     
-`download attribute`:  ***prompts*** the `user` to ***save*** the ***linked*** `URL` ***instead*** of ***navigating*** to it. **Can** be `used` ***with*** or ***without*** a `value`. We will be ***using*** this `attribute` for the `non-HTML` ***version*** of the `résumé` so ***potential employers*** can `download` it onto their `computers` for ***reference***. 
+`download attribute`:  ***prompts*** the `user` to ***save*** the ***linked*** `URL` ***instead*** of ***navigating*** to it. **Can** be `used` ***with*** or ***without*** a `value`. We will be ***using*** this `attribute` for the `non-HTML` ***version*** of the `résumé` so ***potential employers*** can `download` it ***onto*** `their computers` ***for reference***. 
 
 If `used` ***without*** a `value`, the `browser` ***will suggest*** a `filename/extension,` ***generated*** from ***various*** `sources` ***such as***:
 
@@ -155,7 +156,7 @@ If `used` ***without*** a `value`, the `browser` ***will suggest*** a `filename/
 
 ***Defining*** a `value` for the `download attribute` ***results*** in ***suggesting*** it as the `filename`. `/` and `\` ***characters*** are ***converted*** to `underscores` (`_`). `File systems` ***may forbid*** `other characters` in `filenames`, so `browsers` ***will adjust*** the ***suggested name*** if ***necessary***.
 
-The `download attribute` ***only works*** for [same-origin URLs](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy), ***or*** the [`blob:` ](https://flaviocopes.com/blob/) and [`data:` scheme attributes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs). `same-origin URL` means `URL` (`path`) ***within*** the ***same*** `site`. For example, the `résumé` ***file*** would be ***hosted*** on the ***same*** `site`, and ***therefore*** would ***contain*** a `"same-origin URL"`.
+The `download attribute` ***only works*** for [same-origin URLs](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy), ***or*** the [`blob:` ](https://flaviocopes.com/blob/) and [`data:` scheme attributes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs). `same-origin URL` ***means*** `URL` (`path`) ***within*** the ***same*** `site`. For ***example***, the `résumé` ***file*** would be ***hosted*** on the ***same*** `site`, and ***therefore*** would ***contain*** a `"same-origin URL"`.
 
 ***If*** the `Content-Disposition header` has ***different information*** from the `download attribute`, the ***following*** may ***happen***:
 
@@ -252,7 +253,7 @@ An ***basic example*** of how `sectional elements` ***work together*** on the **
 <section class="section">
     <h2 class="sentence">Breaking it down: the header area</h2>
     
-In our ***example*** *`semantically sectioned`* `HTML document`, we ***begin*** at the `top` ***with*** the `header element`.
+In our ***example*** *`semantically sectioned`* `HTML document`, we ***begin*** at the `top` with the `header element`.
 
 ```html
 <header>
@@ -273,11 +274,11 @@ This is a ***very basic*** `header layout`. There are ***other*** `navigation la
 
 + [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/)
 
-***How*** you ***want*** to ***set up*** your `navigation` ***depend*** on ***what*** you are ***trying*** to ***convey*** on your `site`. If you ***don't*** currently have a `"brand"` for ***yourself*** in ***mind***, you ***don't*** have to ***add*** the `brand icon` ***now***. It is **something** you can `add` ***later***. ***Otherwise***, the ***structure*** of my `navigation menu` is ***quite similar*** to the ***structure*** of the `navigation menu` ***here***.
+***How*** you ***want*** to ***set up*** your `navigation` ***depends*** on ***what*** you are ***trying*** to ***convey*** on your `site`. If you ***don't*** `currently have` a `"brand"` for ***yourself*** in ***mind***, you ***don't*** have to ***add*** the `brand icon` ***now***. It is **something** you can `add` ***later***. ***Otherwise***, the ***structure*** of my `navigation menu` is ***quite similar*** to the ***structure*** of the `navigation menu` ***here***.
 
-If you ***want*** to ***add*** `sub-menus` ***later***, you can do that ***as well***. However, I ***find*** that ***keeping*** it ***simple***, ***especially*** for a `portfolio site`, is ***best practice***.
+If you ***want*** to ***add*** `sub-menus` ***later***, you can do that ***as well***. I ***find*** that ***keeping*** it ***simple***, ***especially*** for a `portfolio site`, is ***best practice***.
 
-***Under*** the `navigation menu` is the ***main heading*** for the `page` ***represented*** by the `h1 element`. This is ***textually*** `semantic`, and ***should*** be ***placed*** at the ***top*** of the ***page***. There **should** be ***only one*** `h1 element` per ***page***. ***However***, you ***can*** `re-use` `h2 elements`, one ***per*** `article element`, for ***example***, as the *`"title"`* for the `article element`.
+***Under*** the `navigation menu` is the ***main heading*** for the `page` ***represented*** by the `h1 element`. This is ***textually*** `semantic`, and ***should*** be ***placed*** at the ***top*** of the ***page***. There **should** be ***only one*** `h1 element` per ***page***. You ***can*** `re-use` `h2 elements`, one ***per*** `article element`, for ***example***, as the *`"title heading"`* for the `article element`.
 
 </section>
 
@@ -311,7 +312,7 @@ One ***can*** have ***many sections*** on a ***page***. One can ***also*** `choo
 <section class="section">
     <h2 class="sentence">Breaking it down: the article "sectioning"</h2>
     
-In the `example` ***provided***, the `designer` ***chose*** to ***use*** the `p element` for the `article` ***title***. ***That*** is ***fine***, but ***not*** `semantic`. ***Using*** an `h2 element` ***would*** be ***better***, as it ***would indicate*** the ***next*** `heading` ***down*** from the `h1 element`, and ***since*** it would be `repeated` ***only once*** per `article "section"`, it would ***indicate*** that it is the `heading` of the `article`, as well as ***differentiating*** it ***from*** the ***rest*** of the ***text*** that ***follows***. That `text` can be ***placed*** between `opening` and `closing p tags`.
+In the `example` ***provided***, the `designer` ***chose*** to ***use*** the `p element` for the `article` ***title***. ***That*** is ***fine***, but ***not*** `semantic`. ***Using*** an `h2 element` ***would*** be ***better***, as it ***would indicate*** the ***next*** `heading` ***down*** from the `h1 element`, and ***since*** it ***would*** be `repeated` ***only once*** per `article "section"`, it would ***also indicate*** that it is the `heading` of the `article`, as well as ***differentiating*** it ***from*** the ***rest*** of the ***text*** that ***follows***. That `text` ***can*** be ***placed*** between `opening` and `closing p tags`.
 
 </section>
 
@@ -320,11 +321,11 @@ In the `example` ***provided***, the `designer` ***chose*** to ***use*** the `p 
 <section class="section">
     <h2 class="sentence">Breaking it down: the aside "sectioning"</h2>
     
-`aside element`: ***places content*** `aside` from the `content` it is ***placed in***. The `aside element` ***defines content*** `aside` from the `content` it is ***placed in***.
+`aside element`: The `aside element` ***defines content*** `aside` ***from*** the `content` it is ***placed in***.
 
-The `aside element` ***content*** should be ***indirectly related*** to the ***surrounding*** `content`.
+The `aside element` content ***should*** be ***indirectly related*** to the ***surrounding*** `content`.
 
-`Tip`: The `aside element` ***and*** its `content` is ***used*** as a ***sidebar*** in a `document`.
+`Tip`: The `aside element` ***and*** its `content` ***can*** be ***used*** as a `sidebar` in a `document`.
 
 The `aside element` does ***not*** `render` as ***anything special*** in the `browser`. It ***can***, however, be ***styled*** in **such** a **way** that it *`"pops out"`* on the ***page***.
 
@@ -363,7 +364,7 @@ On ***other pages*** of the `site`, the `content` of the `footer element` ***dif
 
 + [interglobalmedianetwork.com/sitemap](https://www.interglobalmedianetwork.com/sitemap)
 
-On a `portfolio site`, ***however***, one ***should*** keep it as ***simple*** as ***possible***. `Copyright attribution` ***with*** the `name` of the `creator/site owner`, and `social media` ***links*** are ***good things*** to ***have***. But ***just*** the `copyright attribution` with the `name` of the `creator/site owner` and `date` is ***plenty***. 
+On a `portfolio site`, one ***should*** keep it as ***simple*** as ***possible***. `Copyright attribution` ***with*** the `name` of the `creator/site owner`, and `social media` ***links*** are ***good things*** to ***have***. But ***just*** the `copyright attribution` with the `name` of the `creator/site owner` and `date` is ***plenty***. 
 
 `Social media` ***links*** can be ***placed elsewhere*** where it ***might*** be ***more*** `semantically appropriate`.
 
@@ -374,11 +375,11 @@ On a `portfolio site`, ***however***, one ***should*** keep it as ***simple*** a
 <section class="section">
     <h2 class="sentence">Adding an external style sheet to the head element</h2>
     
-***So far***, we ***have*** been ***styling*** our `HTML document` ***mostly using*** the `internal style` ***approach***, which ***consists*** of ***placing*** `CSS` ***within*** the `style element` ***located*** in the `head element` of the `document`.
+***So far***, we have been ***styling*** our `HTML document` ***mostly using*** the `internal style` ***approach***, which ***consists*** of ***placing*** `CSS` ***within*** the `style element` ***located*** in the `head element` of the `document`.
 
-***However***, this is ***not*** the ***best approach***. It would ***mean*** `copying` and `pasting` that `style element` and its ***associated*** `CSS` into ***each page*** on the `site`. That ***means*** `repetition`, which ***affects*** the ***performance*** of the ***site***. ***Extra*** or ***repetitive*** `CSS` ***slows down*** the ***loading*** of ***pages***. The ***more*** `CSS` ***code*** there is to ***load***, the ***longer*** it ***takes***! This could ***result*** in `visitors` ***leaving*** the ***site***, because they ***don't want*** to ***waste time*** `waiting` for the ***page***(s) to ***complete*** `loading` the `assets` onto the ***page***.
+***This*** is ***not*** the ***best approach***. It would ***mean*** `copying` and `pasting` that `style element` and its ***associated*** `CSS` into ***each page*** on the `site`. That ***means*** `repetition`, which ***affects*** the `performance` of the `site`. ***Extra*** or ***repetitive*** `CSS` ***slows down*** the ***loading*** of `pages`. The ***more*** `CSS` ***code*** there is to ***load***, the ***longer*** it ***takes***! This could ***result*** in `visitors` ***leaving*** the ***site***, because they ***don't want*** to ***waste time*** `waiting` for the ***page***(s) to ***complete*** `loading` the `assets` ***onto*** the `page`.
 
-To ***avoid*** these ***issues***, we can ***add*** a `link` to an ***external*** `style sheet` which can be ***added*** to the `head element` of ***each page***. For example, we can do the following:
+To ***avoid*** these ***issues***, we can ***add*** a `link` to an ***external*** `style sheet` which can be ***added*** to the `head element` of ***each page***. For ***example***, we can ***do*** the ***following***:
 
 ```html
 <link rel="stylesheet" href="main.css">
