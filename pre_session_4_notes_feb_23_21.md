@@ -22,4 +22,6 @@ Notes for Start of Class 2.23.21
 
 11. For those who want to get started with creating a sticky footer, they can refer to my [Creating a Basic Sticky Footer with CSS](https://github.com/interglobalmedia/basic-sticky-footer/blob/master/basic-sticky-footer.md) slide deck and follow the steps there.
 
+12. Demonstrate how to use the Notes extension for class notes.
+
 And that is it for now!
