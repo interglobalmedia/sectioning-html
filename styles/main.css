@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* End CSS Reset */
+
+/* Global Styinging */
+body {
+    background: #fec619;
+    overflow-x: hidden;
+    font-family: 'Inconsolata', monospace;
+}
+
+a {
+    color: #a10ebd;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h1#main-heading {
+    margin-top: 3rem;
+}
+
+/* image styling */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+	height: auto;
+}
+
+figure {
+    display: block;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid;
+}
+
+figcaption {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    /* point this out to class and toggle it to show effect */
+    word-break: break-word;
+}
+
+p.caption a {
+    font-style: italic;
+    font-family: monospace;
+    padding: 0;
+	text-align: center;
+}
+
+@media (max-width: 799px) {
+    section {
+        display: block;
+        width: 97.5%;
+        margin: 0 auto;
+    }
+}
+
+/* nav styles using Flexbox (screens greater than 899px) */
+nav {
+    width: 100vw;
+    /* background: #D6EFFF; */
+    background: transparent;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1.5rem;
+}
+
+li {
+    list-style-type: none;
+    margin: 0.5vw;
+    font-size: 2.75vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-family: monospace;
+	cursor: pointer;
+}
+
+a:hover {
+    color: #2f6690;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* End nav styles using Flexbox (screens greater than 899px) */
+
+/* Logo Styling */
+.header {
+    margin-top: 2rem;
+}
+
+.header .logo {
+    text-align: center;
+    font-size: 1.75rem;
+    text-decoration: none;
+    background: #f79ece;
+    width: 93.44px;
+    height: 76px;
+    padding: 1.25rem;
+    vertical-align: bottom;
+    margin-left: 1rem;
+}
+
+/* End Header Logo Styling */
+
+/* media query for site navigation */
+
+@media (max-width: 899px) {
+    ul {
+        /* display: block; */
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    li {
+        margin: 0 0 0 1.25rem;
+    }
+
+    a {
+        display: block;
+    }
+
+    .header {
+        margin-top: 0.75rem;
+    }
+
+    .header .logo {
+        margin-left: 1.25rem;
+    }
+
+    /* Responsive Hamburger menu styling */
+    .hamburger {
+        display: block;
+        position: absolute;
+        /* always keep ham on top of everything */
+        z-index: 1000;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        /* show the hamburger menu image */
+        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-size: 100%;
+    }
+
+    /* change hamburger image to close */
+    .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        background-size: 100%;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #bc2732;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        /* hide the menu above the screen by default */
+        transform: translateY(-100%);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.2s ease;
+    }
+
+    .showNav {
+        /* show the menu */
+        transform: translateY(0);
+    }
+}
+
+/* Site Footer  Styling */
+.site-credits {
+    text-align: center;
+}
+
+/* Sticky Footer Sylting */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+}
+
+.site-credits {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+
+/* End Sticky Footer Syling */
