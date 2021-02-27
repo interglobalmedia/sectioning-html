@@ -12,7 +12,7 @@
 
 /* Global Styinging */
 body {
-    background: #fec619;
+    background: #bada55;
     overflow-x: hidden;
     font-family: 'Inconsolata', monospace;
 }
@@ -20,14 +20,34 @@ body {
 a {
     color: #a10ebd;
 }
-
-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+hgroup .section-heading {
+	text-align: center;
+	margin: 0 auto;
+	width: 97.5%;
+	display: flex;
+	justify-content: center;
+	background: rgba(104, 151, 187, 0.7);
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 }
 
 h1#main-heading {
     margin-top: 3rem;
+}
+
+.main-heading {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	width: 97.5%;
+}
+
+hgroup .section-heading:nth-of-type(1) {
+	margin: 0 auto 0;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* image styling */
@@ -41,7 +61,7 @@ img {
 
 figure {
     display: block;
-    margin: 3rem auto;
+    margin: 4rem auto;
     width: 90%;
     max-width: 800px;
     border: 1px solid;
@@ -82,7 +102,8 @@ nav {
 ul {
     display: flex;
     justify-content: flex-end;
-    margin-top: -1.5rem;
+    margin-top: -2rem;
+	margin-bottom: 1.5rem;
 }
 
 li {
@@ -100,7 +121,7 @@ a {
 }
 
 a:hover {
-    color: #2f6690;
+    color: #800080;
 }
 
 .hamburger {
@@ -116,19 +137,17 @@ a:hover {
 
 .header .logo {
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     text-decoration: none;
-    background: #f79ece;
     width: 93.44px;
     height: 76px;
-    padding: 1.25rem;
     vertical-align: bottom;
-    margin-left: 1rem;
+	letter-spacing: 0.07rem;
 }
 
 /* End Header Logo Styling */
 
-/* media query for site navigation */
+/* media query for site navigation for screens smaller than 900px */
 
 @media (max-width: 899px) {
     ul {
@@ -147,10 +166,6 @@ a:hover {
 
     .header {
         margin-top: 0.75rem;
-    }
-
-    .header .logo {
-        margin-left: 1.25rem;
     }
 
     /* Responsive Hamburger menu styling */
@@ -181,7 +196,7 @@ a:hover {
         position: absolute;
         top: 0;
         left: 0;
-        background: #bc2732;
+        background: #6897BB;
         width: 100vw;
         height: 100vh;
         overflow: hidden;
