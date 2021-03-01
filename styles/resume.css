@@ -76,10 +76,6 @@ p + ul {
 	margin-top: 0.75em;
 }
 
-footer h3 {
-	margin-left: 0.5rem;
-}
-
 footer p, footer p + p {
 	margin: 0;
 }
@@ -317,12 +313,13 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		white-space: nowrap;
 	}
 
+	footer h3 {
+		margin-left: 0.5rem;
+	}
+
 	.contact-info {
 		display: flex;
 		justify-content: flex-start;
-	}
-
-	.contact-info p {
 		margin-left: 0.5rem;
 	}
 
