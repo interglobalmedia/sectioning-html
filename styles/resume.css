@@ -1,0 +1,359 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Resume Typography */
+html {
+	font-size: 100.01%
+}
+
+body {
+	background-color: #DEDEDE;
+	font: normal 0.75em/1.5 "Georgia", "Times New Roman", serif;
+	overflow-x: hidden;
+} /*establish 12px font with verticle rhythm*/
+
+/* =header font size */
+h1, h2, h3, h4, h5, h6 {
+	color: #111;
+	font-family: "Tahoma", "Helvetica", "Droid Sans", sans-serif;
+	letter-spacing: 1px;
+}
+
+h1 {
+	border-bottom: 0.07142855em double #444;
+	color: #000; font: normal 3.5em/2 "Georgia", sans-serif;
+	text-align: center;
+}
+
+h2 {
+	color: #000;
+	font-size: 1.5em;
+	letter-spacing: 0.07142855em;
+	font-variant: small-caps;
+} /* 24px / 16px */
+
+h3 {
+	border-bottom: 0.07142855em solid #333;
+	font-size: 1.25em;
+	line-height: 1.42857em;
+	margin-bottom: 0.375em;
+	margin-top: 1.05357em;
+	position: relative;
+}  /* 20px / 16px */
+
+.education {
+	font-size: 1em;
+	display: block;
+}
+
+.education h3 time {
+	font-size: 0.75em;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+h4 {
+	font-size: 1.1255em;
+	line-height: 1.2857em;
+	margin-bottom: 0.375em;
+	margin-top: 1.0893em;
+	}  /* 18px / 16px */
+
+/* =p leading */
+p {
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+}
+
+p + p {
+	margin-top: 1.5em;
+}
+
+p + ul {
+	margin-top: 0.75em;
+}
+
+footer h3 {
+	margin-left: 0.5rem;
+}
+
+footer p, footer p + p {
+	margin: 0;
+}
+
+/* Layout for Resume */
+/* =header display */
+header, footer {
+	clear: both;
+}
+
+header h2, header p {
+	padding: 0 40px;
+	width: 510px;
+}
+
+header h1 {
+	text-shadow: 2px 3px 2px #999;
+}
+
+/* page holder */
+.page {
+	background: #fff;
+	border: 0.07142855em solid #CECECE;
+	margin: 0.35714286em auto 1em;
+	padding-bottom: 1.5em;
+	position: relative;
+	width: 960px;
+}
+
+/*h3 {display: inline-block; margin-top: 0; padding-top: 0;}*/
+.time {
+	font-size: 0.75em;
+	font-weight: normal;
+	float: right; margin-top: 0;
+	padding-top: 0;
+	position: absolute;
+	right: 0;
+} /* 16 / 20 */
+
+/* =ul style */
+ul {
+	margin: 0 2em 0.857em;
+}
+ul li {
+	list-style-type: square;
+	position: relative;
+}
+.technology li { }
+.technology li > span {
+	display: none;
+}
+
+
+/* =a styles */
+a:link, a:active, a:focus, a:visited, a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+@media (min-width: 320px) {
+    html, body {
+		margin: 0;
+		padding: 0;
+		text-shadow: none;
+	}
+
+    header, header h2, header p, .page, footer {
+		background: #fff;
+		margin: 0 auto;
+		padding: 0;
+		width: 93.75%;
+	}
+
+    header {
+		margin-bottom: 1em;
+	}
+
+    header h2, header p {
+		margin-left: 0; padding-left: 0;
+	}
+
+    .page .resume_content, .page .resume_skills {
+		float: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.resume_skills a:hover {
+		color: #0030ff;
+	}
+
+    article, aside, .vcard {
+		margin: 0 10px;
+		padding: 0;
+	}
+
+    footer {
+		font-size: inherit !important;
+		margin-bottom: 1em;
+	}
+
+	.footer-nav ul {
+		display: block;
+		margin-left: 0;
+		padding-bottom: 1.25rem;
+		padding-top: 0.75rem;
+	}
+
+	.footer-nav li {
+	    list-style-type: none;
+	    margin: 0.5vw;
+		line-height: 2;
+		border-bottom: 1px dashed;
+	}
+
+	.footer-nav a {
+	    text-decoration: none;
+	    padding: 2vw;
+		cursor: pointer;
+	}
+
+	.footer-nav a:hover {
+	    color: black;
+	}
+
+    .vcard {
+		border: none;
+		background-color: #fff;
+		display: none;
+		margin: 1em 10px 1em -3px !important;
+		position: inherit; width: 100%;
+	}
+
+    .vcard p {
+		padding: 0 10px 0 0;
+	}
+
+    .vcard h3 {
+		display: block;
+	}
+
+    .vcard strong {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 900px) {
+    html, body, .page {border: none !important; color: #444 !important; text-shadow: none !important; filter:none !important; margin: 0; padding: 0; -ms-filter: none !important;}
+    body {background-color: rgb(110,110,110) !important;}
+	.footer-nav li {
+		border-bottom: none;
+	}
+
+	.footer-nav li:nth-of-type(1) {
+		margin-left: 0.75rem;
+	}
+    /* page holder */
+    .page {
+		background: #fff;
+		margin: 0.35714286em auto 1em;
+		position: relative; width: 93.75%;
+	} /* 960px / 1024px */
+
+  	/* 2 columm layout */
+	/* column 1: article */
+	.page .resume_content {
+		float: left;
+		margin-bottom: 0.35714286em;
+		margin-top: 1em;
+		width: 590px;
+	}
+	/* column 2: aside */
+	.page .resume_skills {
+		float: right;
+		margin-top: 1em;
+		width: 365px;
+	}
+	/* layout padding*/
+	article {
+		margin: 0 20px 0 40px;
+		position: relative;
+	}
+	aside {
+		margin: 0 40px 0 1.25rem;
+		position: relative;
+	}
+	aside h2 {
+		margin-bottom: 1.05357em;
+	}
+
+    /* 2 columm layout */
+    /* column 1: */
+	.page .resume_content {
+		float: left;
+		margin-bottom: 0.35714286em;
+		width: 61.45833%;
+	} /* 590px / 960px */
+    /* column 2: */
+	.page .resume_skills {
+		float: right;
+		width: 34.375%;
+	}  /* 270px / 960px */
+    header p {
+		width: 57.291667%
+	}
+      /* =footer placement */
+    .vcard {
+    	background-color: #EAEAEA;
+    	border: 1px solid #DEDEDE;
+    	box-shadow: 2px 3px 6px #999;
+    	left: 66.145833%;
+    	margin: 10px;
+    	padding: 6px 10px;
+    	position: absolute;
+    	width: 26.666667%;
+    	top:  9.0625em;
+    } /* 635px / 960px, 256px / 960px */
+  	.vcard h3, .vcard strong {
+		display: none;
+  	}
+
+	b {
+		font-weight: normal;
+		margin-top: -2px;
+		padding-top: 0;
+		position: absolute;
+		right: 0;
+	}
+
+	h3 + p {
+		max-width: 75%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.contact-info {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.contact-info p {
+		margin-left: 0.5rem;
+	}
+
+	.contact-info p:nth-of-type(1) {
+		margin-right: 1.5rem;
+	}
+
+	.footer-nav {
+		width: 100vw;
+	}
+
+	.footer-nav ul {
+		display: flex;
+		justify-content: flex-start;
+		margin-left: -1.5rem;
+		padding-bottom: 1.25rem;
+		padding-top: 0.75rem;
+	}
+
+	.footer-nav li {
+	    list-style-type: none;
+	    margin: 0.5vw;
+	}
+
+	.footer-nav a {
+	    text-decoration: none;
+	    padding: 2vw;
+		cursor: pointer;
+	}
+
+	.footer-nav a:hover {
+	    color: #0030ff;
+	}
+}
