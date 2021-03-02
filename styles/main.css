@@ -19,27 +19,6 @@ body {
 a {
     color: #a10ebd;
 }
-.section-heading {
-	text-align: center;
-	margin: 0 auto;
-	width: 97.5%;
-	display: flex;
-	justify-content: center;
-	background: rgba(104, 151, 187, 0.7);
-	border-top: 1px solid;
-	border-bottom: 1px solid;
-}
-
-h1#main-heading {
-    margin-top: 3rem;
-}
-
-.main-heading {
-	text-align: center;
-	margin-top: 3rem;
-	margin-bottom: 1.5rem;
-	width: 97.5%;
-}
 
 section {
     display: grid;
@@ -74,6 +53,38 @@ figcaption {
     word-break: break-word;
 }
 
+/* End global styling */
+
+/* h1 styling for index.html */
+
+h1#main-heading {
+    margin-top: 3rem;
+}
+
+/* h1 styling in portfolio.html */
+
+.main-heading {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	width: 97.5%;
+}
+
+/* h2 Section heading styling in portfolio.html */
+
+.section-heading {
+	text-align: center;
+	margin: 0 auto;
+	width: 97.5%;
+	display: flex;
+	justify-content: center;
+	background: rgba(104, 151, 187, 0.7);
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+/* a element class attribution-link styling in portfolio.html */
+
 .attribution-link {
 	color: #0030ff;
 }
@@ -82,12 +93,20 @@ figcaption {
 	color: #000;
 }
 
+/* End a element class attribution-link styling in portfolio.html */
+
+/* p element caption class styling in portfolio.html - wraps around the entire CC attribution */
+
 p.caption a {
     font-style: italic;
     font-family: monospace;
     padding: 0;
 	text-align: center;
 }
+
+/* End p element caption class styling in portfolio.html - wraps around the entire CC attribution */
+
+/* media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
 
 @media (max-width: 799px) {
     section {
@@ -97,7 +116,27 @@ p.caption a {
     }
 }
 
+/* End media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
+
 /* nav styles using Flexbox (screens greater than 899px) */
+
+/* Logo Styling */
+.header {
+    margin-top: 2rem;
+}
+
+.header .logo {
+    text-align: center;
+    font-size: 2.25rem;
+    text-decoration: none;
+    width: 93.44px;
+    height: 76px;
+    vertical-align: bottom;
+	letter-spacing: 0.07rem;
+}
+
+/* End Header Logo Styling */
+
 nav {
     width: 100vw;
     /* background: #D6EFFF; */
@@ -134,23 +173,6 @@ a:hover {
 }
 
 /* End nav styles using Flexbox (screens greater than 899px) */
-
-/* Logo Styling */
-.header {
-    margin-top: 2rem;
-}
-
-.header .logo {
-    text-align: center;
-    font-size: 2.25rem;
-    text-decoration: none;
-    width: 93.44px;
-    height: 76px;
-    vertical-align: bottom;
-	letter-spacing: 0.07rem;
-}
-
-/* End Header Logo Styling */
 
 /* media query for site navigation for screens smaller than 900px */
 
