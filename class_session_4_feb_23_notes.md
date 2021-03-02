@@ -40,7 +40,7 @@ body {
 }
 ```
 
-Above, 'Work Sans' is the family name. `sans serif` is the generic family. 
+Above, 'Work Sans' is the family name. `sans serif` is the generic family.
 
 You can test how accessibility friendly your site is with Lighthouse. it is a Chrome extension which you can find in the Chrome Web Store. It will become your best friend.
 
@@ -48,33 +48,19 @@ This is an example of placing the generated Creative Commons HTML inside the fig
 
 ```html
 <figure>
-				<img src="https://live.staticflickr.com/2535/4188650592_d245f48434_b.jpg"
-					 alt="Nature bird">
-				<figcaption>
-					<p class="caption"><a
-						   href="https://www.flickr.com/photos/29468339@N02/4188650592">"Nature
-							bird"</a><span> by <a
-							   href="https://www.flickr.com/photos/29468339@N02">@Doug88888</a></span>
-						is licensed under <a
-						   href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html"
-						   style="margin-right: 5px;">CC BY-NC-SA 2.0</a>
-					</p>
-					<p class="caption">
-						<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html"
-						   target="_blank"
-						   rel="noopener noreferrer"
-						   style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img
-								 style="height: inherit;margin-right: 3px;display: inline-block;"
-								 src="https://search.creativecommons.org/static/img/cc_icon.svg?image_id=8e2b1e58-8163-4469-b8c7-b02b9245fd13" /><img
-								 style="height: inherit;margin-right: 3px;display: inline-block;"
-								 src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img
-								 style="height: inherit;margin-right: 3px;display: inline-block;"
-								 src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" /><img
-								 style="height: inherit;margin-right: 3px;display: inline-block;"
-								 src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" /></a>
-					</p>
-				</figcaption>
-			</figure>
+	<img src="https://live.staticflickr.com/2535/4188650592_d245f48434_b.jpg"
+		 alt="Nature bird">
+	<figcaption>
+		<p class="caption"><a
+			   href="https://www.flickr.com/photos/29468339@N02/4188650592">"Nature
+				bird"</a><span> by <a
+				   href="https://www.flickr.com/photos/29468339@N02">@Doug88888</a></span>
+			is licensed under <a
+			   href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html"
+			   style="margin-right: 5px;">CC BY-NC-SA 2.0</a>
+		</p>
+	</figcaption>
+</figure>
 ```
 
 In order to change the color of the page background, we can use either the `background` property or the `background-color` property to change the page's background color. Something like this:
@@ -116,7 +102,7 @@ For those of you that asked me (Nastassia, good question) to share where I discu
 
 If there is anyone who is interested in learning how to download Node.js and NPM (which is what is necessary to run the slide decks locally like I do for class), I would be happy to show you, but not during class. This is also beyond the scope of the class, so if it does not work out,  it does not work out. It would have to be during office hour. I would also have to show you how to start running it in Terminal (Command Line) on your Mac. That way you would see the slide deck like I do and like I present it in class!
 
-Next, I had mentioned that I had created a [Creating a Basic Responsive Navigation](https://github.com/interglobalmedia/basic-responsive-navigation/blob/master/basic-responsive-navigation.md) and [Creating a Basic Sticky Footer](https://github.com/interglobalmedia/basic-sticky-footer/blob/master/basic-sticky-footer.md) slide deck which go through steps for creating the responsive navigation for the site, and the sticky footer. 
+Next, I had mentioned that I had created a [Creating a Basic Responsive Navigation](https://github.com/interglobalmedia/basic-responsive-navigation/blob/master/basic-responsive-navigation.md) and [Creating a Basic Sticky Footer](https://github.com/interglobalmedia/basic-sticky-footer/blob/master/basic-sticky-footer.md) slide deck which go through steps for creating the responsive navigation for the site, and the sticky footer.
 
 I would like you guys to add the navigation (only desktop no media queries yet, as we have not covered media queries in class) without the hamburger (but you can include the hamburger related markup including classes and ids that might appear in the HTML markup) as well as any CSS that does not include media queries (anything outside of the @media block of CSS code. Inside the @media block is media query related).
 
@@ -133,7 +119,7 @@ For the Project 1:
 4. Landing Page should be added.
 
 The ***following*** is a `link` to a `bunch` of ***really cool*** `landing page ideas` and `takeaways`: [34 Brilliant Landing Page Examples
-With 71 Takeaways](https://klientboost.com/cro/landing-page-examples/). 
+With 71 Takeaways](https://klientboost.com/cro/landing-page-examples/).
 
 ***Another link*** to some other `great examples` of` landing pages` and ***how*** to get `potential clients` and `employers` to ***visit*** your `site`:  [12 Standout Examples of Web Design Portfolios](https://elementor.com/blog/web-design-portfolio-examples/) - this was also included in the readings on the course repository.
 
@@ -171,23 +157,3 @@ Required Reading for this week under Week 4 Required Reading on the course repos
 + [CSS Fonts: Maria D. Campbell *](https://github.com/interglobalmedia/css-fonts/blob/master/css-fonts.md)
 
 + [Working with Typography: Shay Howe *](https://learn.shayhowe.com/html-css/working-with-typography/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
