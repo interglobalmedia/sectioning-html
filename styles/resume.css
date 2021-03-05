@@ -95,6 +95,10 @@ header h1 {
 	text-shadow: 2px 3px 2px #999;
 }
 
+header h1 a:hover {
+	color: #0030ff;
+}
+
 /* page holder */
 .page {
 	background: #fff;
