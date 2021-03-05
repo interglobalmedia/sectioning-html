@@ -161,7 +161,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		margin-left: 0; padding-left: 0;
 	}
 
-    .page .resume_content, .page .resume_skills {
+    .page .professional_experience, .page .resume_skills {
 		float: none;
 		margin: 0;
 		padding: 0;
@@ -172,7 +172,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		color: #0030ff;
 	}
 
-    article, aside, .vcard {
+    article, aside {
 		margin: 0 10px;
 		padding: 0;
 	}
@@ -205,26 +205,6 @@ a:link, a:active, a:focus, a:visited, a:hover {
 	.footer-nav a:hover {
 	    color: black;
 	}
-
-    .vcard {
-		border: none;
-		background-color: #fff;
-		display: none;
-		margin: 1em 10px 1em -3px !important;
-		position: inherit; width: 100%;
-	}
-
-    .vcard p {
-		padding: 0 10px 0 0;
-	}
-
-    .vcard h3 {
-		display: block;
-	}
-
-    .vcard strong {
-		display: inline-block;
-	}
 }
 
 @media (min-width: 900px) {
@@ -246,7 +226,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 
   	/* 2 columm layout */
 	/* column 1: article */
-	.page .resume_content {
+	.page .professional_experience {
 		float: left;
 		margin-bottom: 0.35714286em;
 		margin-top: 1em;
@@ -273,7 +253,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 
     /* 2 columm layout */
     /* column 1: */
-	.page .resume_content {
+	.page .professional_experience {
 		float: left;
 		margin-bottom: 0.35714286em;
 		width: 61.45833%;
@@ -286,21 +266,8 @@ a:link, a:active, a:focus, a:visited, a:hover {
     header p {
 		width: 57.291667%
 	}
-      /* =footer placement */
-    .vcard {
-    	background-color: #EAEAEA;
-    	border: 1px solid #DEDEDE;
-    	box-shadow: 2px 3px 6px #999;
-    	left: 66.145833%;
-    	margin: 10px;
-    	padding: 6px 10px;
-    	position: absolute;
-    	width: 26.666667%;
-    	top:  9.0625em;
-    } /* 635px / 960px, 256px / 960px */
-  	.vcard h3, .vcard strong {
-		display: none;
-  	}
+
+	/* =footer placement */
 
 	b {
 		font-weight: normal;
