@@ -137,6 +137,8 @@ p.caption a {
 
 /* End Header Logo Styling */
 
+/* nav styles using Flexbox (screens greater than 899px) */
+
 nav {
     width: 100vw;
     /* background: #D6EFFF; */
@@ -245,7 +247,7 @@ a:hover {
     text-align: center;
 }
 
-/* Sticky Footer Sylting */
+/* Sticky Footer Styling */
 html,
 body {
     height: 100%;
