@@ -242,6 +242,8 @@ a:hover {
     }
 }
 
+/* End media query for site navigation for screens smaller than 900px */
+
 /* Site Footer  Styling */
 .site-credits {
     text-align: center;
