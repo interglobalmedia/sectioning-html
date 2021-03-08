@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inconsolata:wght@300&display=swap');
 
 /* CSS Reset */
 * {
@@ -8,7 +8,6 @@
 }
 
 /* End CSS Reset */
-
 /* Global Styinging */
 body {
     background: #bada55;
@@ -31,7 +30,7 @@ img {
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
-	height: auto;
+    height: auto;
 }
 
 figure {
@@ -48,7 +47,7 @@ figcaption {
     max-width: 800px;
     margin: 0 auto;
     padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
     /* point this out to class and toggle it to show effect */
     word-break: break-word;
 }
@@ -56,58 +55,123 @@ figcaption {
 /* End global styling */
 
 /* h1 styling for index.html */
-
-h1#main-heading {
-    margin-top: 3rem;
+#landing-main-heading {
+    margin-top: 0.75rem;
 }
 
-/* h1 styling in portfolio.html */
+/* section styleing for index.html */
+.landing-section {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 6px double;
+    width: 90%;
+	max-width: 600px;
+    height: 50vh;
+    margin: 18vh auto;
+    text-align: center;
+    position: relative;
+	background: linear-gradient(to bottom left, cyan 40%, orange 60%);
+}
 
-.main-heading {
+/* End section styling for index.html */
+
+/* article styling for index.html */
+.landing-article {
 	text-align: center;
-	margin-top: 3rem;
-	margin-bottom: 1.5rem;
-	width: 97.5%;
+    width: 100%;
+	margin: auto;
+}
+
+.landing-article p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    width: 90%;
+	margin: 0 auto 1.25rem;
+}
+
+.landing-article a {
+    font-size: 1.5rem;
+}
+
+.landing-article a:hover {
+	box-shadow: 0 1px 2px 2px #34686f;
+	background: #b26ca2;
+	color: #fff;
+	border-radius: 3px;
+	padding: 0.75rem;
+	width: 5rem;
+	margin: 0 auto;
+}
+
+.landing-article a:active {
+	box-shadow: 0 4px 5px 5px #34686f;
+	background: #b26ca2;
+	color: #fff;
+	border-radius: 3px;
+	padding: 0.75rem;
+	width: 5rem;
+	margin: 0 auto;
+}
+
+/* End article styling for index.html */
+
+/* media query smaller screens for section and article elements in index.html */
+
+@media (max-width: 799px) {
+    .landing-section {
+        width: 90%;
+		margin: 12vh auto;
+	}
+	.landing-article p {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+/* End media query smaller screens for section and article elements in index.html */
+
+/* h1 styling in portfolio.html */
+.main-heading {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    width: 97.5%;
 }
 
 /* h2 Section heading styling in portfolio.html */
-
 .section-heading {
-	text-align: center;
-	margin: 0 auto;
-	width: 97.5%;
-	display: flex;
-	justify-content: center;
-	background: rgba(104, 151, 187, 0.7);
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+    text-align: center;
+    margin: 0 auto;
+    width: 97.5%;
+    display: flex;
+    justify-content: center;
+    background: rgba(104, 151, 187, 0.7);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 /* a element class attribution-link styling in portfolio.html */
-
 .attribution-link {
-	color: #0030ff;
+    color: #0030ff;
 }
 
 .attribution-link:hover {
-	color: #000;
+    color: #000;
 }
 
 /* End a element class attribution-link styling in portfolio.html */
-
 /* p element caption class styling in portfolio.html - wraps around the entire CC attribution */
-
 p.caption a {
     font-style: italic;
     font-family: monospace;
     padding: 0;
-	text-align: center;
+    text-align: center;
 }
 
 /* End p element caption class styling in portfolio.html - wraps around the entire CC attribution */
-
 /* media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
-
 @media (max-width: 799px) {
     section {
         display: block;
@@ -117,9 +181,7 @@ p.caption a {
 }
 
 /* End media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
-
 /* nav styles using Flexbox (screens greater than 899px) */
-
 /* Logo Styling */
 .header {
     margin-top: 2rem;
@@ -132,13 +194,11 @@ p.caption a {
     width: 93.44px;
     height: 76px;
     vertical-align: bottom;
-	letter-spacing: 0.07rem;
+    letter-spacing: 0.07rem;
 }
 
 /* End Header Logo Styling */
-
 /* nav styles using Flexbox (screens greater than 899px) */
-
 nav {
     width: 100vw;
     /* background: #D6EFFF; */
@@ -149,7 +209,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     margin-top: -2rem;
-	margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 li {
@@ -163,7 +223,7 @@ a {
     color: black;
     padding: 2vw;
     font-family: monospace;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 a:hover {
@@ -175,9 +235,7 @@ a:hover {
 }
 
 /* End nav styles using Flexbox (screens greater than 899px) */
-
 /* media query for site navigation for screens smaller than 900px */
-
 @media (max-width: 899px) {
     ul {
         /* display: block; */
@@ -234,6 +292,7 @@ a:hover {
         transform: translateY(-100%);
         /* transition adds a little animation when sliding in and out the menu */
         transition: transform 0.2s ease;
+		z-index: 10;
     }
 
     .showNav {
@@ -243,7 +302,6 @@ a:hover {
 }
 
 /* End media query for site navigation for screens smaller than 900px */
-
 /* Site Footer  Styling */
 .site-credits {
     text-align: center;
