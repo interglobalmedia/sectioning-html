@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+	/* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
 	-webkit-locale: auto;
   	white-space: normal;
 }
@@ -22,6 +23,7 @@ a {
 }
 
 h1, h2 {
+	/* to fix the way Safari 14+ reads certain Google Fonts property declarations incorrectly */
 	font-weight: normal;
 }
 
