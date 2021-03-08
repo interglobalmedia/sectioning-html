@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
 
 /* CSS Reset */
 * {
@@ -11,12 +11,16 @@
 /* Global Styinging */
 body {
     background: #bada55;
-    font-family: 'Inconsolata', monospace;
+    font-family: monospace;
     overflow-x: hidden;
 }
 
 a {
     color: #a10ebd;
+}
+
+h1, h2 {
+	font-weight: normal;
 }
 
 section {
@@ -58,7 +62,7 @@ figcaption {
     margin-top: 0.75rem;
 }
 
-/* section styleing for index.html */
+/* section styling for index.html */
 .landing-section {
     background: linear-gradient(to bottom left, cyan 40%, orange 60%);
     border: 6px double;
@@ -231,6 +235,11 @@ a:hover {
 /* End nav styles using Flexbox (screens greater than 899px) */
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
+
+	.header {
+        margin-top: 0.75rem;
+    }
+
     ul {
         /* display: block; */
         flex-direction: column;
@@ -243,10 +252,6 @@ a:hover {
 
     a {
         display: block;
-    }
-
-    .header {
-        margin-top: 0.75rem;
     }
 
     /* Responsive Hamburger menu styling */
