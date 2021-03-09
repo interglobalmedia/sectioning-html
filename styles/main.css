@@ -268,7 +268,7 @@ a:hover {
         cursor: pointer;
         display: block;
         height: 36px;
-        position: absolute;
+        position: fixed;
         right: 20px;
         top: 20px;
         width: 36px;
@@ -286,8 +286,8 @@ a:hover {
         background: #6897BB;
         height: 100vh;
         left: 0;
-        overflow: hidden;
-        position: absolute;
+        overflow-y: hidden;
+        position: fixed;
         top: 0;
         /* hide the menu above the screen by default */
         transform: translateY(-100%);
