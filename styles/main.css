@@ -322,7 +322,7 @@ a:hover {
         /* transition adds a little animation when sliding in and out the menu */
         transition: transform 0.2s ease;
         width: 100vw;
-		/* needed for me because of my intro box in index.html,
+		/* needed for me because of my intro box in index.html.
 		Otherwise navigation backgrop would be behind the intro box when opened */
 		z-index: 10;
     }
