@@ -265,6 +265,14 @@ a:hover {
 		z-index: 99;
 	}
 
+	.index-header {
+		margin-top: 0.5rem;
+	}
+
+	.header .logo {
+		padding-top: 1rem;
+	}
+
     ul {
         /* display: block; */
         flex-direction: column;
