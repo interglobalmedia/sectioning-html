@@ -264,7 +264,7 @@ a:hover {
 	.index-header {
 		/* move up logo in index.html. Otherwise too low. Deal with it
 		differently than the header on other pages, because not sticky.
-		Header everywhere elas is sticky. So use the top property there. */
+		Header everywhere else is sticky. So use the top property there. */
 		margin-top: 0.25rem;
 	}
 
