@@ -261,12 +261,11 @@ a:hover {
 		top: 0;
     }
 
-	.header, .index-header {
-		z-index: 99;
-	}
-
 	.index-header {
-		margin-top: 0.5rem;
+		/* move up logo in index.html. Otherwise too low. Deal with it
+		differently than the header on other pages, because not sticky.
+		Header everywhere elas is sticky. So use the top property there. */
+		margin-top: 0.25rem;
 	}
 
 	.header .logo {
@@ -302,7 +301,7 @@ a:hover {
         top: 20px;
         width: 36px;
         /* always keep ham on top of everything */
-        z-index: 2000;
+        z-index: 1000;
     }
 
     /* change hamburger image to close */
@@ -323,6 +322,8 @@ a:hover {
         /* transition adds a little animation when sliding in and out the menu */
         transition: transform 0.2s ease;
         width: 100vw;
+		/* needed for me because of my intro box in index.html,
+		Otherwise navigation backgrop would be behind the intro box when opened */
 		z-index: 10;
     }
 
