@@ -255,10 +255,11 @@ a:hover {
 @media (max-width: 899px) {
 
 	.header {
-		background: pink;
+		background: rgba(104, 151, 187, 1);
         margin-top: 0;
 		position: sticky;
 		top: 0;
+		z-index: 99;
     }
 
     ul {
@@ -311,7 +312,6 @@ a:hover {
         /* transition adds a little animation when sliding in and out the menu */
         transition: transform 0.2s ease;
         width: 100vw;
-        z-index: 10;
     }
 
     .showNav {
