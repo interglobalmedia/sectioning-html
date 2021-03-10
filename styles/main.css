@@ -198,11 +198,11 @@ p.caption a {
 
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
-.header {
+.header, .index-header {
     margin-top: 2rem;
 }
 
-.header .logo {
+.header .logo, .index-header .logo {
     font-size: 2.25rem;
     height: 76px;
     letter-spacing: 0.07rem;
@@ -259,8 +259,11 @@ a:hover {
         margin-top: 0;
 		position: sticky;
 		top: 0;
-		z-index: 99;
     }
+
+	.header, .index-header {
+		z-index: 99;
+	}
 
     ul {
         /* display: block; */
@@ -291,7 +294,7 @@ a:hover {
         top: 20px;
         width: 36px;
         /* always keep ham on top of everything */
-        z-index: 1000;
+        z-index: 2000;
     }
 
     /* change hamburger image to close */
@@ -312,6 +315,7 @@ a:hover {
         /* transition adds a little animation when sliding in and out the menu */
         transition: transform 0.2s ease;
         width: 100vw;
+		z-index: 10;
     }
 
     .showNav {
