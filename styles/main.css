@@ -27,10 +27,14 @@ h1, h2 {
 	font-weight: normal;
 }
 
+/* CSS Grid section styling for portfolio.html page. */
+
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* End CSS Grid section styling for portfolio.html page */
 
 /* image styling */
 img {
@@ -61,6 +65,7 @@ figcaption {
 }
 
 /* End global styling */
+
 /* h1 styling for index.html */
 #landing-main-heading {
     margin-top: 0.75rem;
@@ -83,7 +88,9 @@ figcaption {
 }
 
 /* End section styling for index.html */
+
 /* article styling for index.html */
+
 .landing-article {
     margin: auto;
     text-align: center;
@@ -122,6 +129,7 @@ figcaption {
 }
 
 /* End article styling for index.html */
+
 /* media query smaller screens for section and article elements in index.html */
 @media (max-width: 799px) {
     .landing-section {
@@ -136,6 +144,7 @@ figcaption {
 }
 
 /* End media query smaller screens for section and article elements in index.html */
+
 /* h1 styling in portfolio.html */
 .main-heading {
     margin-bottom: 1.5rem;
@@ -166,6 +175,7 @@ figcaption {
 }
 
 /* End a element class attribution-link styling in portfolio.html */
+
 /* p element caption class styling in portfolio.html - wraps around the entire CC attribution */
 p.caption a {
     font-style: italic;
@@ -174,6 +184,7 @@ p.caption a {
 }
 
 /* End p element caption class styling in portfolio.html - wraps around the entire CC attribution */
+
 /* media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
 @media (max-width: 799px) {
     section {
@@ -184,6 +195,7 @@ p.caption a {
 }
 
 /* End media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
+
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 .header {
@@ -201,6 +213,7 @@ p.caption a {
 }
 
 /* End Header Logo Styling */
+
 /* nav styles using Flexbox (screens greater than 899px) */
 nav {
     /* background: #D6EFFF; */
@@ -237,11 +250,15 @@ a:hover {
 }
 
 /* End nav styles using Flexbox (screens greater than 899px) */
+
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
 
 	.header {
-        margin-top: 0.75rem;
+		background: pink;
+        margin-top: 0;
+		position: sticky;
+		top: 0;
     }
 
     ul {
@@ -304,6 +321,7 @@ a:hover {
 }
 
 /* End media query for site navigation for screens smaller than 900px */
+
 /* Site Footer  Styling */
 .site-credits {
     text-align: center;
