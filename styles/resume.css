@@ -1,8 +1,8 @@
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 /* Resume Typography */
 html {
@@ -29,8 +29,8 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
-	letter-spacing: 0.07142855em;
 	font-variant: small-caps;
+	letter-spacing: 0.07142855em;
 } /* 24px / 16px */
 
 h1, h2 {
@@ -47,8 +47,8 @@ h3 {
 }  /* 20px / 16px */
 
 .education {
-	font-size: 1em;
 	display: block;
+	font-size: 1em;
 }
 
 .education h3 time {
@@ -117,9 +117,9 @@ header h1 a:hover {
 
 /*h3 {display: inline-block; margin-top: 0; padding-top: 0;}*/
 .time {
+	float: right;
 	font-size: 0.75em;
 	font-weight: normal;
-	float: right;
 	margin-top: 0;
 	padding-top: 0;
 	position: absolute;
@@ -198,16 +198,16 @@ a:link, a:active, a:focus, a:visited, a:hover {
 	}
 
 	.footer-nav li {
+		border-bottom: 0.07142855em dashed;
+		line-height: 2;
 	    list-style-type: none;
 	    margin: 0.5vw;
-		line-height: 2;
-		border-bottom: 1px dashed;
 	}
 
 	.footer-nav a {
-	    text-decoration: none;
-	    padding: 2vw;
 		cursor: pointer;
+		padding: 2vw;
+		text-decoration: none;
 	}
 
 	.footer-nav a:hover {
@@ -338,9 +338,9 @@ a:link, a:active, a:focus, a:visited, a:hover {
 	}
 
 	.footer-nav a {
-	    text-decoration: none;
-	    padding: 2vw;
 		cursor: pointer;
+		padding: 2vw;
+	    text-decoration: none;
 	}
 
 	.footer-nav a:hover {
