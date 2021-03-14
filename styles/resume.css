@@ -1,4 +1,4 @@
-
+/* CSS Reset */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,7 +6,7 @@
 }
 /* Resume Typography */
 html {
-	font-size: 100.01%
+	font-size: 100.01%;
 }
 
 body {
@@ -46,6 +46,8 @@ h3 {
 	position: relative;
 }  /* 20px / 16px */
 
+/* section class inside the div element with the
+class of `resume_skills` for the education section */
 .education {
 	display: block;
 	font-size: 1em;
@@ -130,15 +132,15 @@ header h1 a:hover {
 ul {
 	margin: 0 2em 0.857em;
 }
+
 ul li {
 	list-style-type: square;
 	position: relative;
 }
-.technology li { }
+
 .technology li > span {
 	display: none;
 }
-
 
 /* =a styles */
 a:link, a:active, a:focus, a:visited, a:hover {
@@ -147,6 +149,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 }
 
 @media (min-width: 320px) {
+
     html, body {
 		margin: 0;
 		padding: 0;
@@ -180,6 +183,25 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		color: #0030ff;
 	}
 
+	b {
+		margin-left: 0.25em;
+	}
+
+	.sample-work li {
+		font-size: 1em;
+		line-height: 2;
+		margin: 0.75vh 0;
+	}
+
+	.achievements li {
+		font-size: 1em;
+		margin: 0.5vh 0;
+	}
+
+	.achievements li a {
+		padding: 2vw;
+	}
+
     article, aside {
 		margin: 0 10px;
 		padding: 0;
@@ -188,6 +210,11 @@ a:link, a:active, a:focus, a:visited, a:hover {
     footer {
 		font-size: inherit !important;
 		margin-bottom: 1em;
+	}
+
+	.contact-info p {
+		line-height: 2;
+		margin: 0.75vh 0;
 	}
 
 	.footer-nav ul {
@@ -199,6 +226,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 
 	.footer-nav li {
 		border-bottom: 0.07142855em dashed;
+		font-size: 1.3em;
 		line-height: 2;
 	    list-style-type: none;
 	    margin: 0.5vw;
@@ -220,7 +248,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
     html, body, .page {
 		border: none !important;
 		color: #444 !important;
-		filter:none !important;
+		filter: none !important;
 		-ms-filter: none !important;
 		margin: 0;
 		padding: 0;
@@ -254,21 +282,25 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		margin-top: 1em;
 		width: 590px;
 	}
+
 	/* column 2: aside */
 	.page .resume_skills {
 		float: right;
 		margin-top: 1em;
 		width: 365px;
 	}
+
 	/* layout padding*/
 	article {
 		margin: 0 20px 0 40px;
 		position: relative;
 	}
+
 	aside {
 		margin: 0 40px 0 1.25rem;
 		position: relative;
 	}
+
 	aside h2 {
 		margin-bottom: 1.05357em;
 	}
@@ -280,16 +312,16 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		margin-bottom: 0.35714286em;
 		width: 61.45833%;
 	} /* 590px / 960px */
+
     /* column 2: */
 	.page .resume_skills {
 		float: right;
 		width: 34.375%;
 	}  /* 270px / 960px */
+
     header p {
 		width: 57.291667%
 	}
-
-	/* =footer placement */
 
 	b {
 		font-weight: normal;
@@ -306,6 +338,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		white-space: nowrap;
 	}
 
+	/* =footer placement */
 	footer h3 {
 		margin-left: 0.5rem;
 	}
