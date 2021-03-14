@@ -220,8 +220,8 @@ a:link, a:active, a:focus, a:visited, a:hover {
 	.footer-nav ul {
 		display: block;
 		margin-left: 0;
-		padding-bottom: 1.25rem;
-		padding-top: 0.75rem;
+		padding-bottom: 1.25em;
+		padding-top: 0.75em;
 	}
 
 	.footer-nav li {
@@ -234,12 +234,12 @@ a:link, a:active, a:focus, a:visited, a:hover {
 
 	.footer-nav a {
 		cursor: pointer;
-		padding: 2vw;
+		padding: 2vh 2vw;
 		text-decoration: none;
 	}
 
 	.footer-nav a:hover {
-	    color: black;
+	    color: #000;
 	}
 }
 
