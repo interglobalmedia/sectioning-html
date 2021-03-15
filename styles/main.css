@@ -235,7 +235,7 @@ li {
 }
 
 a {
-    color: black;
+    color: #000;
     cursor: pointer;
     padding: 2vw;
     text-decoration: none;
