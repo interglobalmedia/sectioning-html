@@ -227,9 +227,9 @@ a:link, a:active, a:focus, a:visited, a:hover {
 	.footer-nav li {
 		border-bottom: 0.07142855em dashed;
 		font-size: 1.3em;
-		line-height: 2;
+		line-height: 3.5;
 	    list-style-type: none;
-	    margin: 0.5vw;
+	    margin: 0 0.5vw;
 	}
 
 	.footer-nav a {
