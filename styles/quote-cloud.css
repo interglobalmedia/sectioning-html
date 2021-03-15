@@ -1,0 +1,231 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+	/* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
+	-webkit-locale: auto;
+  	white-space: normal;
+}
+
+html {
+	font-size: 100.01%;
+}
+
+/* End CSS Reset */
+
+body {
+	background-image: url(/images/bryan-minear-317365.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #dcf0fb;
+	font-family: monospace;
+	font-size: 0.75em;
+	font-weight: normal;
+	line-height: 1.5;
+	min-height: 100vh;
+}
+
+/* nav styles using Flexbox (screens greater than 899px) */
+/* Logo Styling */
+
+.about-header .logo {
+	color: #90ac71;
+    font-size: 2rem;
+    height: 76px;
+    letter-spacing: 0.07rem;
+	line-height: 1.5;
+	position: relative;
+	top: 0.8357em;
+    text-align: center;
+    text-decoration: none;
+    width: 93.44px;
+}
+
+/* End Header Logo Styling */
+
+/* nav styles using Flexbox (screens greater than 899px) */
+nav {
+    /* background: #D6EFFF; */
+    background: transparent;
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
+}
+
+li {
+    font-size: 2.75vh;
+    list-style-type: none;
+    margin: 0.5vw;
+}
+
+a {
+    color: #b4a8d9;
+    cursor: pointer;
+    padding: 2.25vw;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+}
+
+article {
+	font-family: sans-serif;
+}
+
+main h1 {
+	font-size: 3.5em;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	margin-top: 5rem;
+	color: #44006c;
+}
+
+/* Quote Cloud */
+
+.quote-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	height: 50vh;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	width: 75%;
+}
+
+.quote-cloud {
+	font-size: 1rem;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+    blockquote {
+        font-size: 2rem;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+}
+
+@media (max-width: 640px) and (max-height: 360px) {
+    blockquote {
+        font-size: 1.3rem;
+	}
+}
+
+/* End nav styles using Flexbox (screens greater than 899px) */
+
+/* media query for site navigation for screens smaller than 900px */
+@media (max-width: 899px) {
+
+	.about-header .logo {
+		/* line-height: 2; */
+		margin-left: -0.5rem;
+		margin-top: -1.25rem;
+		position: relative;
+	}
+
+    ul {
+        /* display: block; */
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    li {
+        margin: 0 0 0 1.25rem;
+    }
+
+    a {
+		color: #44006c;
+        display: block;
+    }
+
+    /* Responsive Hamburger menu styling */
+    .hamburger {
+        background-color: transparent;
+        /* show the hamburger menu image */
+        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-size: 100%;
+        border: none;
+        cursor: pointer;
+        display: block;
+        height: 36px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 36px;
+        /* always keep ham on top of everything */
+        z-index: 1000;
+    }
+
+    /* change hamburger image to close */
+    .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        background-size: 100%;
+    }
+
+    .navbar {
+        background: #90ac71;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        /* hide the menu above the screen by default */
+        transform: translateY(-100%);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.2s ease;
+        width: 100vw;
+		/* needed for me because of my intro box in index.html.
+		Otherwise navigation backgrop would be behind the intro box when opened */
+		z-index: 10;
+    }
+
+    .showNav {
+        /* show the menu */
+        transform: translateY(0);
+    }
+
+	main h1 {
+		margin-top: 0;
+	}
+}
+
+/* End media query for site navigation for screens smaller than 900px */
+
+/* Site Footer  Styling */
+.site-credits {
+	color: #b4a8d9;
+	text-align: center;
+}
+
+/* Sticky Footer Styling */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+}
+
+.site-credits {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+}
+
+/* End Sticky Footer Syling */
