@@ -270,11 +270,12 @@ a:link, a:active, a:focus, a:visited, a:hover {
     .page {
 		background: #fff;
 		margin: 0.35714286em auto 1em;
-		position: relative; width: 93.75%;
+		position: relative;
+		width: 93.75%;
 	} /* 960px / 1024px */
 
   	/* 2 columm layout */
-	/* column 1: article */
+	/* column 1: section/article */
 	.page .professional_experience {
 		float: left;
 		margin-bottom: 0.35714286em;
@@ -282,7 +283,7 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		width: 590px;
 	}
 
-	/* column 2: aside */
+	/* column 2: div/aside */
 	.page .resume_skills {
 		float: right;
 		margin-top: 1em;
