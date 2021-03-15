@@ -249,7 +249,6 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		border: none !important;
 		color: #444 !important;
 		filter: none !important;
-		-ms-filter: none !important;
 		margin: 0;
 		padding: 0;
 		text-shadow: none !important;
