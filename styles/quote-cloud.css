@@ -29,17 +29,24 @@ body {
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 
+.about-header {
+    margin-top: 2rem;
+}
+
 .about-header .logo {
 	color: #90ac71;
     font-size: 2rem;
     height: 76px;
     letter-spacing: 0.07rem;
-	line-height: 1.5;
-	position: relative;
-	top: 0.8357em;
     text-align: center;
     text-decoration: none;
     width: 93.44px;
+}
+
+.about-header,
+.about-header nav,
+.about-header .logo {
+	vertical-align: middle;
 }
 
 /* End Header Logo Styling */
@@ -55,7 +62,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1.5rem;
-    margin-top: -1rem;
+    margin-top: -2.5rem;
 }
 
 li {
@@ -132,11 +139,14 @@ main h1 {
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
 
+	.about-header {
+		height: 12vh;
+		margin-top: 0;
+	}
+
 	.about-header .logo {
-		/* line-height: 2; */
 		margin-left: -0.5rem;
-		margin-top: -1.25rem;
-		position: relative;
+		margin-top: -0.375rem;
 	}
 
     ul {
