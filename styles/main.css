@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
-
 /* CSS Reset */
 * {
     box-sizing: border-box;
@@ -188,8 +186,13 @@ p.caption a {
 /* End media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
+
+.header {
+	margin-top: 0;
+}
+
 .header, .index-header {
-    margin-top: 2rem;
+	background: rgba(104, 151, 187, 1);
 }
 
 .header .logo, .index-header .logo {
@@ -198,23 +201,42 @@ p.caption a {
     letter-spacing: 0.07rem;
     text-align: center;
     text-decoration: none;
-    vertical-align: bottom;
+    width: 93.44px;
+}
+
+.index-header .logo, .header .logo {
+	padding-top: 0.5rem;
+}
+
+.logo {
+	/* margin-top: -2rem; */
+	font-size: 2rem;
+    height: 76px;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    text-decoration: none;
     width: 93.44px;
 }
 
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
-nav {
-    /* background: #D6EFFF; */
+.navbar {
     background: transparent;
     width: 100vw;
+	display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
 }
 
-ul {
+.main-nav {
+	width: 100vw;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1.5rem;
-    margin-top: -2rem;
+	margin-right: 1rem;
+	margin-top: 2rem;
 }
 
 li {
@@ -248,33 +270,20 @@ a:hover {
         top: 0;
     }
 
-    .index-header {
-        /* move up logo in index.html. Otherwise too low. Deal with it
-		differently than the header on other pages, because not sticky.
-		Header everywhere else is sticky. So use the top property there. */
-        margin-top: 0.75rem;
-    }
-
-    .index-header,
-	.index-header nav,
-	.index-header .logo,
-	.header nav,
 	.header .logo {
-        vertical-align: middle;
+		padding-top: 1.5rem;
+	}
+
+    .index-header .logo {
+        padding-top: 1.5rem;
     }
 
-    .header .logo {
-        padding-top: 1rem;
-    }
-
-    ul {
-        /* display: block; */
-        flex-direction: column;
-        margin-top: 5rem;
-    }
+	.logo {
+		margin-top: -2rem;
+	}
 
     li {
-        margin: 0 0 0 1.25rem;
+        margin: 0 0 0 1.5rem;
     }
 
     a {
@@ -296,7 +305,7 @@ a:hover {
         top: 20px;
         width: 36px;
         /* always keep ham on top of everything */
-        z-index: 1000;
+        z-index: 10000;
     }
 
     /* change hamburger image to close */
@@ -305,10 +314,13 @@ a:hover {
         background-size: 100%;
     }
 
-    .navbar {
+    .main-nav {
+		display: block;
         background: #6897BB;
         height: 100vh;
         left: 0;
+		margin-top: 0;
+		padding-top: 5rem;
         overflow-y: hidden;
         position: fixed;
         top: 0;
