@@ -12,7 +12,7 @@
 /* Global Styinging */
 body {
     background: #bada55;
-    font-family: monospace;
+    font-family: 'Barlow', sans-serif;
     overflow-x: hidden;
 }
 
@@ -195,29 +195,25 @@ p.caption a {
 	background: rgba(104, 151, 187, 1);
 }
 
-.header .logo, .index-header .logo {
-    font-size: 2rem;
-    height: 76px;
-    letter-spacing: 0.07rem;
-    text-align: center;
-    text-decoration: none;
-    width: 93.44px;
-}
-
 .index-header .logo, .header .logo {
-	padding-top: 0.5rem;
+	padding-top: 0.25rem;
 }
 
 .logo {
-	/* margin-top: -2rem; */
-	font-size: 2rem;
-    height: 76px;
-    letter-spacing: 0.07rem;
+	height: 100%;
+	max-height: 250px;
+	max-width: 187.50px;
     text-align: center;
     text-decoration: none;
-    width: 93.44px;
+	width: 100%;
 }
 
+.brand {
+	height: auto;
+	margin-top: 0;
+	max-width: 7.8125rem;
+	width: 100%;
+}
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
@@ -270,16 +266,15 @@ a:hover {
         top: 0;
     }
 
-	.header .logo {
+	.header .logo, .index-header .logo {
 		padding-top: 1.5rem;
 	}
 
-    .index-header .logo {
-        padding-top: 1.5rem;
-    }
-
-	.logo {
-		margin-top: -2rem;
+	.brand {
+		margin-top: -1.25rem;
+		width: 100%;
+		max-width: 7.8125rem;
+		height: auto;
 	}
 
     li {
