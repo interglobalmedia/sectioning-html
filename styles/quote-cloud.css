@@ -134,17 +134,17 @@ blockquote {
 }
 
 @media (min-width: 600px) {
-	
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
 	h2 {
 		font-size: 2.5rem;
 	}
 
     blockquote {
         font-size: 2rem;
-	}
-
-	h1 {
-		font-size: 3.5rem;
 	}
 }
 
