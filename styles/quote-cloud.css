@@ -24,13 +24,14 @@ body {
 	font-weight: normal;
 	line-height: 1.5;
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 
 .about-header {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .about-header .logo {
@@ -43,26 +44,26 @@ body {
     width: 93.44px;
 }
 
-.about-header,
-.about-header nav,
-.about-header .logo {
-	vertical-align: middle;
-}
-
 /* End Header Logo Styling */
 
 /* nav styles using Flexbox (screens greater than 899px) */
-nav {
-    /* background: #D6EFFF; */
-    background: transparent;
+.navbar {
+	background: transparent;
     width: 100vw;
+	display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
 }
 
-ul {
+.main-nav {
+	width: 100vw;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1.5rem;
-    margin-top: -2.5rem;
+	margin-right: 1rem;
+	margin-top: 2rem;
 }
 
 li {
@@ -140,20 +141,13 @@ main h1 {
 @media (max-width: 899px) {
 
 	.about-header {
-		height: 12vh;
-		margin-top: 0;
+		margin-top: 1.5rem;
 	}
 
 	.about-header .logo {
 		margin-left: -0.5rem;
-		margin-top: -0.375rem;
+		margin-top: 0;
 	}
-
-    ul {
-        /* display: block; */
-        flex-direction: column;
-        margin-top: 5rem;
-    }
 
     li {
         margin: 0 0 0 1.25rem;
@@ -188,11 +182,14 @@ main h1 {
         background-size: 100%;
     }
 
-    .navbar {
+    .main-nav {
         background: #90ac71;
+		display: block;
         height: 100vh;
         left: 0;
-        position: fixed;
+		margin-top: 0;
+		padding-top: 5rem;
+        position: absolute;
         top: 0;
         /* hide the menu above the screen by default */
         transform: translateY(-100%);
