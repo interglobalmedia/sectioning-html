@@ -10,7 +10,6 @@
 html {
 	font-size: 100.01%;
 }
-
 /* End CSS Reset */
 
 body {
@@ -19,7 +18,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #dcf0fb;
-	font-family: monospace;
+	font-family: 'Barlow', sans-serif;
 	font-size: 0.75em;
 	font-weight: normal;
 	line-height: 1.5;
@@ -31,17 +30,29 @@ body {
 /* Logo Styling */
 
 .about-header {
-    margin-top: 1rem;
+	background: rgba(68,0,108, 0.5);
 }
 
 .about-header .logo {
-	color: #90ac71;
-    font-size: 2rem;
-    height: 76px;
-    letter-spacing: 0.07rem;
+	padding-top: 0.25rem;
+}
+
+.logo {
+	height: 97.5%;
+	max-height: 200px;
+	max-width: 150px;
+	position: relative;
     text-align: center;
     text-decoration: none;
-    width: 93.44px;
+	top: 0.75rem;
+	width: 97.5%;
+}
+
+.brand {
+	height: auto;
+	margin-top: 0.25rem;
+	max-width: 7.9688rem;
+	width: 97.5%;
 }
 
 /* End Header Logo Styling */
@@ -49,21 +60,21 @@ body {
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
 	background: transparent;
-    width: 100vw;
 	display: flex;
+	align-items: center;
+	height: 70px;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+	width: 100vw;
 }
 
 .main-nav {
-	width: 100vw;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1.5rem;
 	margin-right: 1rem;
 	margin-top: 2rem;
+	width: 100vw;
 }
 
 li {
@@ -87,28 +98,24 @@ a:hover {
     display: none;
 }
 
-article {
-	font-family: sans-serif;
-}
-
 main h1 {
+	color: #44006c;
 	font-size: 3.5em;
 	font-weight: normal;
 	line-height: 2;
-	text-align: center;
 	margin-top: 5rem;
-	color: #44006c;
+	text-align: center;
 }
 
 /* Quote Cloud */
 
 .quote-container {
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	cursor: pointer;
 	height: 50vh;
+	justify-content: center;
 	margin: 0 auto;
 	padding: 0 1.5rem;
 	width: 75%;
@@ -140,13 +147,12 @@ main h1 {
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
 
-	.about-header {
-		margin-top: 1.5rem;
-	}
-
-	.about-header .logo {
-		margin-left: -0.5rem;
-		margin-top: 0;
+	.brand {
+		height: auto;
+		margin-top: -0.25rem;
+		margin-left: 0.5rem;
+		max-width: 7.9688rem;
+		width: 100%;
 	}
 
     li {
