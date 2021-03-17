@@ -1,4 +1,4 @@
-const navbar = document.querySelector(".navbar")
+const navbar = document.querySelector(".main-nav")
 const ham = document.querySelector(".hamburger")
 
 // toggles hamburger menu in and out when clicking on the hamburger
