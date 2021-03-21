@@ -12,16 +12,49 @@ const quotes = [
     `I have not failed. I've just found 10,000 ways that won't work. - Thomas Alba Edison`
 ]
 
-const blockQuote = document.querySelector('blockquote')
-const articleHeading = document.querySelector('h2')
+const images = [
+	`burst-aoN3HWLbhdI-unsplash.jpg`,
+	`cedric-vt-ILffJKYd1eA-unsplash.jpg`,
+	`eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg`,
+	`vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg`,
+	`boxed-water-is-better-6aZp4_KfXT8-unsplash.jpg`,
+	`daniel-roe-lpjb_UMOyx8-unsplash.jpg`,
+	`boxed-water-is-better-km8IZ4xX9vA-unsplash.jpg`,
+	`joshua-earle-ZMcLVBi9xx4-unsplash.jpg`,
+	`caleb-jones-J3JMyXWQHXU-unsplash.jpg`,
+	`alexander-stanishev-lT5QahSnruU-unsplash.jpg`,
+	`sebastian-pichler-sblp4evk2gs-unsplash.jpg`
+]
+
+const dir = `images/`
+
 const quoteContainer = document.querySelector('.quote-container')
 
-articleHeading.style.fontWeight = `normal`
+const setBg = () => {
+	const body = document.querySelector('body')
+	const quoteCloud = document.querySelector('.quote-cloud')
+	const randomColor = Math.floor(Math.random()*16777215).toString(16)
+	quoteCloud.style.backgroundColor = `#${randomColor}`
+	console.log(randomColor)
+	body.style.backgroundColor = `#${randomColor}`
+}
 
 /* randomize the index retrieval of the quotes array so that each time the user
 clicks on the text rendered to the page, a random quote appears.*/
 quoteContainer.addEventListener('click', () => {
-	const randomIndex = Math.floor(Math.random() * quotes.length);
-	articleHeading.innerHTML = ``
+	const articleHeading = document.querySelector('h2')
+	const blockQuote = document.querySelector('blockquote')
+	const quoteCloud = document.querySelector('.quote-cloud')
+    const randomIndex = Math.floor(Math.random() * quotes.length)
+	const randomImage = Math.floor(Math.random() * images.length)
+    articleHeading.innerHTML = ``
 	blockQuote.textContent = quotes[randomIndex]
+	articleHeading.style.fontWeight = `normal`
+	quoteCloud.style.backgroundImage = `url(${dir}${images[randomImage]})`
+	quoteCloud.style.backgroundPosition = 'center center'
+	quoteCloud.style.backgroundSize = 'cover'
+	quoteCloud.style.height = `100%`
+	quoteCloud.style.maxHeight = `600px`
+	quoteCloud.style.outline = `6px double #000`
+	setBg()
 })
