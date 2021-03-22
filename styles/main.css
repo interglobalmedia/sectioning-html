@@ -69,7 +69,7 @@ figcaption {
 /* section styling for index.html */
 .landing-section {
     background: linear-gradient(to bottom left, cyan 40%, orange 60%);
-    border: 6px double;
+    outline: 6px double;
     font-family: 'Barlow', sans-serif;
     height: 50vh;
     position: relative;
