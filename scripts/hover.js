@@ -26,21 +26,24 @@ const images = [
 	`sebastian-pichler-sblp4evk2gs-unsplash.jpg`
 ]
 
-const dir = `images/`
+const dir = `/images/`
 
 const quoteContainer = document.querySelector('.quote-container')
 
 const setBg = () => {
 	const body = document.querySelector('body')
 	const quoteCloud = document.querySelector('.quote-cloud')
-	const randomColor = Math.floor(Math.random()*16777215).toString(16)
+	const randomColor = Math.floor(Math.random()*16777215).toString(16).padStart(6, '0')
 	quoteCloud.style.backgroundColor = `#${randomColor}`
-	console.log(randomColor)
+	console.log(`#${randomColor}`)
 	body.style.backgroundColor = `#${randomColor}`
 }
 
 /* randomize the index retrieval of the quotes array so that each time the user
-clicks on the text rendered to the page, a random quote appears.*/
+clicks on the text rendered to the page, a random quote appears. In addition,
+a random image appears at the same time, serving as a background for the quote.
+And if no image appears (immediately at least), then a random background color
+is generated and appears as the background of the quote instead. */
 quoteContainer.addEventListener('click', () => {
 	const articleHeading = document.querySelector('h2')
 	const blockQuote = document.querySelector('blockquote')
@@ -49,7 +52,6 @@ quoteContainer.addEventListener('click', () => {
 	const randomImage = Math.floor(Math.random() * images.length)
     articleHeading.innerHTML = ``
 	blockQuote.textContent = quotes[randomIndex]
-	articleHeading.style.fontWeight = `normal`
 	quoteCloud.style.backgroundImage = `url(${dir}${images[randomImage]})`
 	quoteCloud.style.backgroundPosition = 'center center'
 	quoteCloud.style.backgroundSize = 'cover'
