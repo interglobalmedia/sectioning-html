@@ -238,6 +238,8 @@ a:hover {
 /* End media query smaller screens for section and article elements in index.html */
 /* Footer Styling */
 .site-credits {
+	font-size: 1.3rem;
+	letter-spacing: 0.07rem;
     text-align: center;
 }
 
@@ -257,5 +259,4 @@ body {
 
 .site-credits {
     flex-shrink: 0;
-    font-size: 1.2rem;
 }
