@@ -184,6 +184,7 @@ p.caption a {
 }
 
 /* End media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
+
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 
@@ -338,6 +339,8 @@ a:hover {
 /* End media query for site navigation for screens smaller than 900px */
 /* Site Footer  Styling */
 .site-credits {
+	font-size: 1.3rem;
+	letter-spacing: 0.07rem;
     text-align: center;
 }
 
@@ -358,7 +361,6 @@ body {
 
 .site-credits {
     flex-shrink: 0;
-    font-size: 1.2rem;
 }
 
-/* End Sticky Footer Syling */
+/* End Sticky Footer Styling */
