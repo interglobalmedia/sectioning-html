@@ -1,0 +1,389 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
+    -webkit-locale: auto;
+    white-space: normal;
+}
+
+/* End CSS Reset */
+/* Global Styinging */
+body {
+    background: #bada55;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: #a10ebd;
+}
+
+h1, .submit-main-heading {
+  text-align: center;
+}
+
+h1, h2 {
+    /* to fix the way Safari 14+ reads certain Google Fonts property declarations incorrectly */
+    font-weight: normal;
+}
+
+.submit-article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25vh auto;
+}
+
+/* nav styles using Flexbox (screens greater than 899px) */
+/* Logo Styling */
+
+.header {
+	background: rgba(104, 151, 187, 1);
+	margin-top: 0;
+}
+
+.header .logo {
+	padding-top: 0.25rem;
+}
+
+.logo {
+	height: 100%;
+	max-height: 250px;
+	max-width: 187.50px;
+    text-align: center;
+    text-decoration: none;
+	width: 100%;
+}
+
+.brand {
+	height: auto;
+	margin-top: 0;
+	max-width: 7.8125rem;
+	width: 100%;
+}
+/* End Header Logo Styling */
+/* nav styles using Flexbox (screens greater than 899px) */
+.navbar {
+    background: transparent;
+	display: flex;
+	align-items: center;
+	height: 70px;
+    justify-content: space-between;
+    padding-bottom: 0;
+	width: 100vw;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+	margin-right: 1rem;
+	margin-top: 2rem;
+	width: 100vw;
+}
+
+li {
+    font-size: 2.75vh;
+    list-style-type: none;
+    margin: 0.5vw;
+}
+
+a {
+    color: #000;
+    cursor: pointer;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #800080;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* End nav styles using Flexbox (screens greater than 899px) */
+/* media query for site navigation for screens smaller than 900px */
+@media (max-width: 899px) {
+    .header {
+        background: rgba(104, 151, 187, 1);
+        margin-top: 0;
+        position: sticky;
+        top: 0;
+    }
+
+	.header .logo {
+		padding-top: 1.5rem;
+	}
+
+	.brand {
+		margin-top: -1.25rem;
+		width: 100%;
+		max-width: 7.8125rem;
+		height: auto;
+	}
+
+    li {
+        margin: 0 0 0 1.5rem;
+    }
+
+    a {
+        display: block;
+    }
+
+    /* Responsive Hamburger menu styling */
+    .hamburger {
+        background-color: transparent;
+        /* show the hamburger menu image */
+        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-size: 100%;
+        border: none;
+        cursor: pointer;
+        display: block;
+        height: 36px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 36px;
+        /* always keep ham on top of everything */
+        z-index: 10000;
+    }
+
+    /* change hamburger image to close */
+    .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        background-size: 100%;
+    }
+
+    .main-nav {
+		background: #6897BB;
+		display: block;
+        height: 100vh;
+        left: 0;
+		margin-top: 0;
+		padding-top: 5rem;
+        overflow-y: hidden;
+        position: fixed;
+        top: 0;
+        /* hide the menu above the screen by default */
+        transform: translateY(-100%);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.2s ease;
+        width: 100vw;
+        /* needed for me because of my intro box in index.html.
+		Otherwise navigation backgrop would be behind the intro box when opened */
+        z-index: 10;
+    }
+
+    .showNav {
+        /* show the menu */
+        transform: translateY(0);
+    }
+}
+
+/* End media query for site navigation for screens smaller than 900px */
+
+/* Contect Form Styling */
+
+form {
+	background: #ffc600;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 15vh auto;
+	max-width: 600px;
+	padding: 1.5rem 0.5rem 3rem;
+	width: 90%;
+}
+
+legend {
+	margin-bottom: 0.5rem;
+}
+
+fieldset {
+	border-color: #000;
+	border-style: double;
+	border-width: 6px;
+	display: flex;
+	align-items: center;
+	margin-top: 1.5rem;
+	max-width: 600px;
+	width: 97.5%;
+}
+
+fieldset > label {
+	flex: 1 0 120px;
+	max-width: 50%;
+}
+
+fieldset > label + * {
+	flex: 1 0 50%;
+}
+
+fieldset input {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 36px;
+}
+
+legend {
+	padding-left: 0.25rem;
+}
+
+label {
+	margin-left: 0.25rem;
+}
+
+input {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: #ffc600;
+	border: none;
+	font-size: 0.9rem;
+	outline: none;
+    width: 97.5%;
+}
+
+@media (max-width: 799px) {
+	fieldset, input {
+		display: block;
+	}
+	label, input[placeholder] {
+		margin-left: 0.25rem;
+	}
+}
+
+/* Input placeholder font color styling fix across browsers */
+
+input[name="firstname"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000;
+}
+
+input[name="firstname"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+
+input[name="firstname"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000;
+}
+
+input[name="firstname"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+
+input[name="lastname"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+}
+
+input[name="lastname"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+}
+
+input[name="lastname"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000;
+}
+
+input[name="lastname"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #000;
+}
+
+input[name="email"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000;
+}
+
+input[name="email"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+
+input[name="email"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000;
+}
+
+input[name="email"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+
+/* Input placeholder font color styling fix across browsers */
+
+/* Form Button Styling */
+
+form button {
+	background: #34d0a5;
+	border: 1px solid;
+	border-radius: 3px;
+	outline: none;
+    font-size: 1.3rem;
+	padding: 0.5rem;
+	margin: 0.25rem 0.25rem 0.75rem;
+}
+
+form button:hover {
+    background: #b26ca2;
+    /* border-radius: 3px; */
+    box-shadow: 0 1px 2px 2px #34686f;
+    color: #fff;
+    /* margin: 0 auto; */
+    padding: 0.75rem;
+    width: 6rem;
+}
+
+form button:active {
+    background: #b26ca2;
+    /* border-radius: 3px; */
+    box-shadow: 0 4px 5px 5px #34686f;
+    color: #fff;
+    /* margin: 0 auto; */
+    padding: 0.75rem;
+    width: 6rem;
+}
+
+/* End contact.html button styling */
+
+/* End contact.html styling */
+
+/* Site Footer  Styling */
+.site-credits {
+	font-size: 1.3rem;
+	letter-spacing: 0.07rem;
+    text-align: center;
+}
+
+/* Sticky Footer Styling */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+}
+
+.site-credits {
+    flex-shrink: 0;
+}
+
+/* End Sticky Footer Styling */
