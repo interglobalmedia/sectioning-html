@@ -195,7 +195,7 @@ form {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 15vh auto;
+	margin: 0 auto;
 	max-width: 600px;
 	padding: 1.5rem 0.5rem 3rem;
 	width: 90%;
@@ -251,12 +251,74 @@ input {
     width: 97.5%;
 }
 
+.contact-form-wrapper {
+	background: #ffc600;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15vh auto;
+	max-width: 600px;
+	width: 90%;
+}
+
+/* section .contact-info class styling */
+
+.contact-info h2 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 1rem;
+	margin-left: 0.5rem;
+}
+
+/* div .info-wrapper class styling (wraps aorund fieldset containging
+Maria tel and email info) */
+
+.info-wrapper fieldset {
+	display: flex;
+	align-items: center;
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
 @media (max-width: 799px) {
 	fieldset, input {
 		display: block;
 	}
 	label, input[placeholder] {
 		margin-left: 0.25rem;
+	}
+
+	.contact-info {
+		text-align: center;
+		width: 90%;
+		max-width: 600px;
+	}
+
+	.contact-info h2 {
+		text-align: center;
+	}
+
+	.contact-info p:nth-of-type(1) {
+		margin-top: 0.5rem;
+	}
+
+	.info-wrapper p {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.info-wrapper fieldset {
+		display: block;
+		width: 95%;
+		margin: 0 auto 3rem;
+		/* flex-direction: column;
+		align-items: flex-start; */
 	}
 }
 
