@@ -1,4 +1,6 @@
-Required Going in to Project 2
+# Required Going in to Project 3
+
+**Note 3.27.21**: The following below should be in place for Project 3 instead of Project 2. It makes more sense because the below is also required for the structure of the Quotes Project 3. So the below will be part of the Project 3 grade.
 
 1. You must have a completed site navigation both for desktop and mobile in regards to your html and CSS. If you would like to give the JavaScript a shot, please go ahead, but it is not required at this time. I am more concerned with your getting your HTML markup structure and related CSS code down first.
 2. You must have a Sticky Footer in place. Not a “sticky footer” hack that is not reusable and would have to be refactored each time you create a new page with new content. But the HTML markup I have implemented in each page necessary for the creation of the Sticky Footer in your external stylesheet:
