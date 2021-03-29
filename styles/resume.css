@@ -187,15 +187,10 @@ a:link, a:active, a:focus, a:visited, a:hover {
 		margin-left: 0.25em;
 	}
 
-	.sample-work li {
+	.sample-work li, .achievements li {
 		font-size: 1em;
 		line-height: 2;
 		margin: 0.75vh 0;
-	}
-
-	.achievements li {
-		font-size: 1em;
-		margin: 0.5vh 0;
 	}
 
     article, aside {
