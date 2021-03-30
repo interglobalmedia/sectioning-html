@@ -511,4 +511,6 @@ figcaption {
 /* End global styling */
 ```
 
+8. Your site **must** be ***completely responsive***. This **means** that you should be **using** `media queries` where ***necessary***, and/or `fluid design layout` so that ALL your `site pages` **fit within** the `viewports` of any `device` by ***adapting*** to those `viewports` WITHOUT OMMITTING ANY DATA in the **process**.
+
  
