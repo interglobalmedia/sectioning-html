@@ -2,12 +2,20 @@
 
 **Note 3.27.21**: The following below should be in place for Project 3 instead of Project 2. It makes more sense because the below is also required for the structure of the Quotes Project 3. So the below will be part of the Project 3 grade.
 
-1. You must have a completed site navigation both for desktop and mobile in regards to your html and CSS. If you would like to give the JavaScript a shot, please go ahead, but it is not required at this time. I am more concerned with your getting your HTML markup structure and related CSS code down first.
-2. You must have a Sticky Footer in place. Not a “sticky footer” hack that is not reusable and would have to be refactored each time you create a new page with new content. But the HTML markup I have implemented in each page necessary for the creation of the Sticky Footer in your external stylesheet:
-	a. The addition of the opening main tag right below the opening body tag. The addition of the class attribute inside the opening main tag with the value of “Site-content”. This is the class you will be using in your external stylesheet to target this HTML element.
-	b. The addition of the closing main tag right above the opening footer tag. The addition of the class attribute inside the opening footer tag with the value of “site-credits”. This is the class you need towards the creation of the Sticky Footer in your external stylesheet.
+## Where to find the HTML markup and production code relevant to my production site as reference
 
-	c. The CSS code necessary for the Sticky Footer styling:  
++ [Sectioning HTML](https://github.com/interglobalmedia/sectioning-html) slide deck repository. ***Look out*** for the `about.html` **page**, the `index.html` **page**, and the `portfolio.html` **page**. The `resume.html` **page** and its ***associated*** `styles/resume.css` **external stylesheet** is being treated ***separately***. The **associated** `CSS code` can be ***found*** in `styles/main.css` **external stylesheet**. If you **want** to **get into** the `JavaScript` for the `responsive hamburger menu` ***ahead*** of **time**, it can be **found** in the `scripts/hamburger.js` **file**.
+
++ [Basic Responsive Navigation](https://github.com/interglobalmedia/basic-responsive-navigation) slide deck repository. This ***points*** to the **original** `HTML markup` and `styles/main.css` **associated** `CSS code` for the `basic responsive navigation` ***before*** I added ***subsequent*** `refactoring` to the **Portfolio Site** `HTML markup` and `CSS` ***located*** in the [Sectioning HTML](https://github.com/interglobalmedia/sectioning-html) slide deck repository.
+
++ [Basic Sticky Footer](https://github.com/interglobalmedia/basic-sticky-footer) slide deck repository. This is **where** the `HTML markup` and `styles/main.css` **associated** `CSS code` for the `basic sticky footer` **can** be ***found***.
+
+1. You ***must*** have a **completed** `reponsive site navigation` ***both*** for `desktop` and `mobile` in regards to your `html` and `CSS`. If you **would like** to **give** the `JavaScript` a **shot** before I go over it in class, please go ahead, but it is ***not required*** at **this time**. I am ***more concerned*** with your **getting** the `HTML markup structure` and ***related*** `CSS code` ***down first***.
+2. You ***must*** have a `Sticky Footer` in **place**. ***Not*** a `“sticky footer”` **hack** that is ***not*** `reusable` and would have to be `refactored` ***each time*** you **create** a ***new page*** with ***new content***. The **following** is the `HTML markup` I have ***implemented*** in `each page` ***necessary*** for the **creation** of the `Sticky Footer` in your `external stylesheet`:
+	a. The **addition** of the ***opening*** `main tag` **right below** the ***opening*** `body tag`. The **addition** of the `class attribute` **inside** the ***opening*** `main tag` with the **value** of `“Site-content”`. This is the `class` you will be **using** in your `external stylesheet` to ***target*** this `HTML element`.
+	b. The **addition** of the ***closing*** `main tag` **right above** the ***opening*** `footer tag`. The **addition** of the `class attribute` ***inside*** the ***opening*** `footer tag` with the **value** of `“site-credits”`. This is the `class` you **need** towards the **creation** of the `Sticky Footer` in your `external stylesheet`.
+
+	c. The `CSS code` ***necessary*** for the `Sticky Footer` **styling**:  
 
 ```css
 /* Sticky Footer Styling */
@@ -62,7 +70,7 @@ body {
 </header>
 ```
 
-The associated code for the above is the following:
+The ***associated*** `CSS code` for the **above** is the ***following***:
 
 ```css
 /* nav styles using Flexbox (screens greater than 899px) */
@@ -219,9 +227,9 @@ a:hover {
 /* End media query for site navigation for screens smaller than 900px */
 ```
 
-This is actually a refactor of my original HTML markup for the site navigation and CSS code. It will probably differ slightly from yours. I think it works better, but I also created my own portfolio_brand.png file using Adobe Illustrator, because I wanted the logo to look a certain way.
+This is **actually** a `refactor` of my ***original*** `HTML markup` for the `responsive site navigation` and `CSS code`. It will ***probably*** `differ slightly` from **yours**. I think it **works better**, but I also ***created*** my **own** `portfolio_brand.png` file **using** `Adobe Illustrator`, because I ***wanted*** the `logo` to **look** a ***certain way***.
 
-This is totally not required. You can simply use the text content approach as we did initially. The HTML markup for this approach remains intact in the Basic Responsive Navigation Slide Deck:
+This is totally ***not required***. You **can** simply **use** the `text content` **approach** as we did ***initially***. The `HTML markup` for ***this approach*** remains intact in the [Basic Responsive Navigation](https://github.com/interglobalmedia/basic-responsive-navigation) slide deck (see below):
 
 ```html5
 /* The opening header tag is for the portfolio.html page. The opening header tag for the index.html page, if you are following my lead, would contain a class attribute value of “index-header” instead of “header”
@@ -406,14 +414,14 @@ a:hover {
 /* End media query for site navigation for screens smaller than 900px */
 ```
 
-4. Project 1 REQUIRES that you create TWO PAGES. One is the index.html page which represents the home page/landing page. It should be named index.html page. NOT home.html page or something like that and then creating a dummy, empty index.html page so you don’t have to cut and paste the contents of the home.html page into the index.html page. Because that is all it takes!!!! I will continue to take off points for such hacks. I will also continue to take off points for submission of ONLY ONE PAGE for Project 1.
+4. `Project 1` REQUIRES that you ***create*** TWO PAGES. **One** is the `index.html` **page** which ***represents*** the `home page/landing page`. It ***should*** be **named** `index.html` **page**. NOT `home.html` **page** or **something** like that and then ***creating*** a **dummy**, **empty** `index.html` **page** so you ***don’t*** have to **cut** and **paste** the ***contents*** of the `home.html` **page** into the `index.html` **page**. Because that is ***all*** it ***takes***!!!! I will **continue** to **take off** `points` for ***such hacks***. I will ***also*** continue to **take off** `points` for **submission** of ONLY ONE PAGE for `Project 1` **related content**.
 
-Whoever does not have any ideas for a home page, you can follow my lead with my index.html page. My production site is https://www.letsbsocial.nyc/.
+Whoever does ***not*** have **ny ideas** for a `home page`, you can ***follow*** my **lead** with my `index.html` **page**. My `production site` is https://www.letsbsocial.nyc/.
 
-The Sectioning HTML slide deck repository, which houses the production markup, CSS code, and JavaScript for my site, can be followed here: https://github.com/interglobalmedia/sectioning-html
+The [Sectioning HTML](https://github.com/interglobalmedia/sectioning-html) slide deck repository, which **houses** the `production markup`, `CSS code`, and `JavaScript` for my **site**, can be ***found*** here: https://github.com/interglobalmedia/sectioning-html
 
-5. You must have actual attribution links for your Creative Commons images. NOT ATTRIBUTION TEXT. Attribution text does not an attribution link make. OK? So go back to your images in Creative Commons and find the attribution link for the image, the photographer, and the Creative Commons license. I will continue to take off points for omission of these attribution links.
-6. You must have a media query for your CSS Grid columns in your portfolio.html page. The media query for transforming the CSS Grid 3 column layout to one column is the following:
+5. You ***must*** have **actual** `attribution links` for your `Creative Commons` **images**. NOT ATTRIBUTION TEXT. `Attribution text` ***does not*** an `attribution link` ***make***. OK? So **go back** to your `images` in `Creative Commons` and ***find*** the `attribution links` for the `image`, the `photographer`, and the `Creative Commons license`. I will ***continue*** to **take off** `points` for **omission** of ***these*** `attribution links`.
+6. You ***must*** have a `media query` for your `CSS Grid columns` in your `portfolio.html` **page**. The `media query` for ***transforming*** the `CSS Grid 3 column layout` to `one column` is the ***following***:
 
 ```css
 @media (max-width: 799px) {
@@ -425,7 +433,7 @@ The Sectioning HTML slide deck repository, which houses the production markup, C
 }
 ```
 
-You can also opt to do the following:
+You can **also opt** to ***do*** the ***following***:
 
 ```css
 section {
@@ -433,7 +441,9 @@ section {
 }
 ```
 
-And, in case if you have not yet styled your 3 column layout, the following CSS code does that:
+It ***gets you*** to the **same place**. **Either way** is ***valid***.
+
+And, in ***case*** if you have **not yet** `styled` your `3 column layout`, the ***following*** `CSS code` ***does that***:
 
 ```css
 section {
@@ -442,9 +452,7 @@ section {
 }
 ```
 
-It gets you to the same place. Either way is valid.
-
-7. make sure you are using the figure element and the figcaption element inside your portfolio.html page. So on a basic level, the HTML markup for your images should be at least something like the following:
+7. **Make sure** you are **using** the `figure element` and the `figcaption element` ***inside*** your `portfolio.html` **page**. So on a ***asic level***, the `HTML markup` for your `images` should be ***at least*** something like the ***following***:
 
 ```html5
 /* Don't know where everyone's individual h1 elements are, I am just placing one here simply as a demonstration. */
@@ -465,7 +473,7 @@ It gets you to the same place. Either way is valid.
 </section>
 ```
 
-Then you could add the following descendant selector in your external stylesheet:
+Then you **could add** the ***following*** `descendant selector` in your `external stylesheet`:
 
 ```css
 /* p element caption class styling in portfolio.html - wraps around the entire CC attribution */
@@ -477,7 +485,7 @@ p.caption a {
 /* End p element caption class styling in portfolio.html - wraps around the entire CC attribution */
 ```
 
-As for the figure and figcaption styling, you could have something like the following in place:
+As for the `figure` and `figcaption` **styling**, you could have **something** like the ***following*** in **place**:
 
 ```css
 /* image styling */
@@ -513,4 +521,4 @@ figcaption {
 
 8. Your site **must** be ***completely responsive***. This **means** that you should be **using** `media queries` where ***necessary***, and/or `fluid design layout` so that ALL your `site pages` **fit within** the `viewports` of any `device` by ***adapting*** to those `viewports` WITHOUT OMMITTING ANY DATA in the **process**.
 
- 
+If you have ***any questions*** or are **stuck** on **something**, please ***do contact*** me on `Discord` via `Direct Message`. Thanks!
