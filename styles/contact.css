@@ -285,16 +285,16 @@ input {
 
 /* section .warning class styling */
 
-.warning h2 {
-	margin-top: 3rem;
-	text-align: center;
-}
-
 .warning {
 	display: block;
 	margin: 0 auto 1.5rem;
 	max-width: 600px;
 	width: 90%;
+}
+
+.warning h2 {
+	margin-top: 3rem;
+	text-align: center;
 }
 
 .warning-wrapper fieldset {
@@ -418,7 +418,7 @@ input[name="email"]:-moz-placeholder {
   color: #000;
 }
 
-/* Input placeholder font color styling fix across browsers */
+/* End Input placeholder font color styling fix across browsers */
 
 /* Form Button Styling */
 
