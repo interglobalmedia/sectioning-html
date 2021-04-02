@@ -78,6 +78,9 @@ figcaption {
     justify-content: center;
     margin: 18vh auto;
     max-width: 600px;
+	/* need to add this for strange devices that create fixed content
+	and no scroll like Microsoft Lumia 550. Now the content will fit for index.html */
+	overflow: auto;
     text-align: center;
     width: 85%;
 }
@@ -122,6 +125,7 @@ figcaption {
 }
 
 /* End article styling for index.html */
+
 /* media query smaller screens for section and article elements in index.html */
 @media (max-width: 799px) {
     .landing-section {
