@@ -126,10 +126,18 @@ figcaption {
 
 /* End article styling for index.html */
 
+/* media query specific to Microsoft Lumia 550. */
+@media (width: 640px) and (height: 360px) {
+	/* This is what has to change in .landing section in order for the h1 to show. */
+	#landing-main-heading {
+		margin-top: 5rem;
+	}
+}
+/* end media query specific to Microsoft Lumia 550. */
+
 /* media query smaller screens for section and article elements in index.html */
 @media (max-width: 799px) {
     .landing-section {
-		height: 70vh;
         margin: 12vh auto;
         width: 90%;
     }
