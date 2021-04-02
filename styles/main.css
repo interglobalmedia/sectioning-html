@@ -71,7 +71,7 @@ figcaption {
     background: linear-gradient(to bottom left, cyan 40%, orange 60%);
     outline: 6px double;
     font-family: 'Barlow', sans-serif;
-    height: 50vh;
+    height: 70vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -79,21 +79,21 @@ figcaption {
     margin: 18vh auto;
     max-width: 600px;
     text-align: center;
-    width: 90%;
+    width: 85%;
 }
 
 /* End section styling for index.html */
 /* article styling for index.html */
 .landing-article {
     margin: auto;
-    text-align: center;
+	text-align: center;
     width: 100%;
 }
 
 .landing-article p {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin: 0 auto 1.25rem;
+    margin: 1.25rem auto 1.25rem;
     width: 90%;
 }
 
@@ -125,12 +125,13 @@ figcaption {
 /* media query smaller screens for section and article elements in index.html */
 @media (max-width: 799px) {
     .landing-section {
+		height: 70vh;
         margin: 12vh auto;
         width: 90%;
     }
 
     .landing-article p {
-        margin: 0 auto;
+        margin: 1.25rem auto;
         width: 90%;
     }
 }
@@ -174,6 +175,14 @@ p.caption a {
 }
 
 /* End p element caption class styling in portfolio.html - wraps around the entire CC attribution */
+
+/* media query min-width: 480px for landing section height. Way too big beyond that point. */
+
+@media (min-width: 480px) {
+	.landing-section {
+		height: 50vh;
+	}
+}
 /* media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
 @media (max-width: 799px) {
     section {
