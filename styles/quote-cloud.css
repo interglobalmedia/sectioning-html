@@ -213,10 +213,10 @@ a:hover {
 
 /* end article quote-cloud styling desktop */
 /* font-size specific max-width: 640px and max-height: 360px (Microsoft Lumia 550) */
-@media (max-width: 640px) and (max-height: 360px) {
-    h2, blockquote {
-        font-size: 1.3rem;
-    }
+@media (width: 640px) and (height: 360px) {
+	h1 {
+		margin-top: 0;
+	}
 }
 
 /* end font-size specific max-width: 640px and max-height: 360px (Microsoft Lumia 550) */
