@@ -13,6 +13,15 @@ body {
 
 h1 {
     margin-top: 3rem;
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+blockquote {
+	font-size: 1.5rem;
 }
 
 section h1, h2 {
@@ -31,24 +40,14 @@ section h1, h2 {
     background: rgba(104, 151, 187, 1);
 }
 
-.header .logo {
-    padding-top: 0.25rem;
-}
-
-.logo {
-    height: 100%;
-    max-height: 250px;
-    max-width: 187.50px;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-}
-
+/* I changed .logo class to .brand class */
 .brand {
-    height: auto;
-    margin-top: 0;
-    max-width: 7.8125rem;
-    width: 100%;
+	width: 100%;
+	width: 7.8125rem;
+	height: auto;
+	display: flex;
+	font-size: 2.25rem;
+	font-weight: bold;
 }
 
 /* End Header Logo Styling */
@@ -103,16 +102,14 @@ a:hover {
         top: 0;
     }
 
-    .header .logo {
-        padding-top: 1.5rem;
-    }
-
-    .brand {
-        height: auto;
-        margin-top: -1.25rem;
-        max-width: 7.8125rem;
-        width: 100%;
-    }
+	/* I changed .logo class to .brand class */
+	.brand {
+		margin-left: 0.5rem;
+		width: 100%;
+		width: 7.8125rem;
+		height: auto;
+		display: flex;
+	}
 
     li {
         margin: 0 0 0 1.5rem;
