@@ -44,24 +44,13 @@ h1, h2 {
 	margin-top: 0;
 }
 
-.header .logo {
-	padding-top: 0.25rem;
-}
-
-.logo {
-	height: 100%;
-	max-height: 250px;
-	max-width: 187.50px;
-    text-align: center;
-    text-decoration: none;
-	width: 100%;
-}
-
 .brand {
-	height: auto;
-	margin-top: 0;
-	max-width: 7.8125rem;
 	width: 100%;
+	width: 7.8125rem;
+	height: auto;
+	display: flex;
+	font-size: 2.25rem;
+	font-weight: bold;
 }
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
@@ -115,15 +104,12 @@ a:hover {
         top: 0;
     }
 
-	.header .logo {
-		padding-top: 1.5rem;
-	}
-
 	.brand {
-		margin-top: -1.25rem;
 		width: 100%;
-		max-width: 7.8125rem;
+		width: 7.8125rem;
 		height: auto;
+		display: flex;
+		margin-left: 0.5rem;
 	}
 
     li {
