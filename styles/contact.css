@@ -45,13 +45,14 @@ h1, h2 {
 }
 
 .brand {
-	width: 100%;
-	width: 7.8125rem;
-	height: auto;
 	display: flex;
 	font-size: 2.25rem;
 	font-weight: bold;
+	height: auto;
+	width: 100%;
+	width: 7.8125rem;
 }
+
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
