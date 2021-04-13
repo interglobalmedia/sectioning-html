@@ -33,11 +33,8 @@ section h1, h2 {
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 .header {
+	background: rgba(104, 151, 187, 1);
     margin-top: 0;
-}
-
-.header {
-    background: rgba(104, 151, 187, 1);
 }
 
 /* I changed .logo class to .brand class */
