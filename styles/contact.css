@@ -88,7 +88,7 @@ a {
 }
 
 a:hover {
-    color: #800080;
+    color: #fd8c00;
 }
 
 .hamburger {
@@ -442,6 +442,13 @@ form button:active {
 /* End contact.html button styling */
 
 /* End contact.html styling */
+
+/* Styling for .active class for active page url */
+.active {
+	color: #f2b07a;
+}
+
+/* End styling for .active class for active page url */
 
 /* Site Footer  Styling */
 .site-credits {

@@ -263,7 +263,7 @@ a {
 }
 
 a:hover {
-    color: #800080;
+    color: #fd8c00;
 }
 
 .hamburger {
@@ -345,6 +345,13 @@ a:hover {
         transform: translateY(0);
     }
 }
+
+/* Styling for .active class for active page url */
+.active {
+	color: #f2b07a;
+}
+
+/* End styling for .active class for active page url */
 
 /* End media query for site navigation for screens smaller than 900px */
 /* Site Footer  Styling */

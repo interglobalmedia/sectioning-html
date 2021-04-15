@@ -82,7 +82,7 @@ a {
 }
 
 a:hover {
-    color: #800080;
+    color: #fd8c00;
 }
 
 .hamburger {
@@ -230,6 +230,14 @@ a:hover {
 }
 
 /* End media query smaller screens for section and article elements in index.html */
+
+/* Styling for .active class for active page url */
+.active {
+	color: #f2b07a;
+}
+
+/* End styling for .active class for active page url */
+
 /* Footer Styling */
 .site-credits {
 	font-size: 1.3rem;
