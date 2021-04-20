@@ -60,6 +60,9 @@ figcaption {
     margin: 0 auto;
     max-width: 800px;
     padding-bottom: 0.25rem;
+	/* *Added padding-left and right after I set the figure element to
+	display: flex; After that addition there was no padding
+	to left or right of text within the figcaption area */
 	padding-left: 0.25rem;
 	padding-right: 0.25rem;
     padding-top: 0.25rem;
