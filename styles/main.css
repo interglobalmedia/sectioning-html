@@ -60,6 +60,8 @@ figcaption {
     margin: 0 auto;
     max-width: 800px;
     padding-bottom: 0.25rem;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
     padding-top: 0.25rem;
     text-align: center;
     /* point this out to class and toggle it to show effect */
@@ -195,6 +197,7 @@ figcaption {
 }
 
 /* End a element class attribution-link styling in portfolio.html */
+
 /* p element caption class styling in portfolio.html - wraps around the entire CC attribution */
 p.caption a {
     font-style: italic;
