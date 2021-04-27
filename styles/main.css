@@ -39,8 +39,6 @@ img {
     margin: 0 auto;
     max-width: 800px;
     max-width: 100%;
-	grid-column: 1 / 2;
-    grid-row: 1 / 3;
 }
 
 figure {
@@ -51,9 +49,12 @@ figure {
 	/* add so that things would display correctly and figcaption would
 	display at all because set to position: absolute. */
 	position: relative;
-	/* this addition removes any margin or padding that was going on around the
-	figcaption text from all the images in desktop view. */
-	display: flex;
+}
+
+figure > img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 figcaption {
@@ -69,8 +70,7 @@ figcaption {
     text-align: center;
     /* point this out to class and toggle it to show effect */
     word-break: break-word;
-    /* background: rgba(black, 0.6); */
-	/* Below addded so that the figcaption text would overlay on top of image
+	/* Below added so that the figcaption text would overlay on top of image
 	instead of below */
 	position: absolute;
 	bottom: 0;
@@ -79,6 +79,11 @@ figcaption {
 	background: rgba(255, 255, 255, 0.5);
 	font-weight: normal;
 	width: 100%;
+	/* alternative approach to transform: translateX(-50%) property declration */
+	/* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
 }
 
 /* End global styling */
@@ -217,16 +222,20 @@ p.caption a {
 		height: 50vh;
 	}
 }
-/* media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
-@media (max-width: 799px) {
-    section {
+
+/* media query for section element CSS Grid columns in viewport < 899px in portfolio.html */
+@media (max-width: 899px) {
+	section {
         display: block;
         margin: 0 auto;
         width: 97.5%;
     }
+	p.caption a {
+		display: inline-block;
+	}
 }
 
-/* End media query for section element CSS Grid columns in viewport < 799px in portfolio.html */
+/* End media query for section element CSS Grid columns in viewport < 899px in portfolio.html */
 
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
@@ -242,7 +251,7 @@ p.caption a {
 
 .brand {
 	width: 100%;
-	width: 7.8125rem;
+	max-width: 7.8125rem;
 	height: auto;
 	display: flex;
 	margin-left: 1.125rem;
@@ -306,7 +315,7 @@ a:hover {
 	.brand {
 		margin-left: 1.125rem;
 		width: 100%;
-		width: 7.8125rem;
+		max-width: 7.8125rem;
 		height: auto;
 		display: flex;
 	}
