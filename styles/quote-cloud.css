@@ -4,6 +4,31 @@
     padding: 0;
 }
 
+/* Linear gradient styling to body */
+
+.about-body {
+    background: repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+        rgba(255, 153, 0, 0.3) 80px, rgba(255, 255, 0, 0.3) 120px,
+        rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+        rgba(75, 0, 130, 0.3) 240px, rgba(238, 130, 238, 0.3) 280px,
+        rgba(255, 0, 0, 0.3) 300px), 
+        repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.3) 30px,
+        rgba(255, 153, 0, 0.3) 60px, rgba(255, 255, 0, 0.3) 90px,
+        rgba(0, 255, 0, 0.3) 120px, rgba(0, 0, 255, 0.3) 150px,
+        rgba(75, 0, 130, 0.3) 180px, rgba(238, 130, 238, 0.3) 210px,
+        rgba(255, 0, 0, 0.3) 230px),
+        repeating-linear-gradient(23deg, rgba(255,229,86, 0.5) 50px, rgba(0,188,240, 0.3) 100px,
+        rgba(48,53,57, 0.5) 150px, rgba(200,65,45, 0.3) 200px, rgba(225,235,237, 0.5) 250px,
+        rgba(65,21,122, 0.5) 300px, rgba(122,72,176, 0.5) 350px, rgba(255,229,86, 0.5) 370px);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        object-fit: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        z-index: 0;
+        overflow-x: hidden;
+}
+
 /* Global Styling */
 body {
     overflow-x: hidden;
@@ -28,12 +53,17 @@ section h1, h2 {
     text-align: center;
 }
 
+/* Styling for .active class for active page url */
+.active {
+	color: rgba(122,72,176, 1);
+}
+
 /* End Global Styling */
 /* Site navigation desktop (viewports less than 900px wide) */
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 .header {
-	background: rgba(104, 151, 187, 1);
+	/* background: rgba(104, 151, 187, 1); */
     margin-top: 0;
 }
 
@@ -82,7 +112,7 @@ a {
 }
 
 a:hover {
-    color: #fd8c00;
+    color: #c8412d;
 }
 
 .hamburger {
@@ -93,7 +123,7 @@ a:hover {
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
     .header {
-        background: rgba(104, 151, 187, 1);
+        /* background: rgba(104, 151, 187, 1); */
         margin-top: 0;
         position: sticky;
         top: 0;
@@ -114,6 +144,14 @@ a:hover {
 
     a {
         display: block;
+    }
+
+    a:hover {
+		color: #fd8c00;
+	}
+
+    .active {
+        color: #c8412d;
     }
 
     /* Responsive Hamburger menu styling */
@@ -231,10 +269,6 @@ a:hover {
 
 /* End media query smaller screens for section and article elements in index.html */
 
-/* Styling for .active class for active page url */
-.active {
-	color: #f2b07a;
-}
 
 /* End styling for .active class for active page url */
 

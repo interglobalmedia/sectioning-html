@@ -9,9 +9,34 @@
 }
 
 /* End CSS Reset */
+
+/* contact-body class gradient styling */
+
+.contact-body {
+	background-image: repeating-conic-gradient(rgba(42,71,88, 1) 0 9deg, rgba(193,217,5, 1) 9deg 18deg);
+	background-repeat: no-repeat;
+    /* background-size: cover; */
+    object-fit: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.submit-body {
+	background-image: repeating-conic-gradient(from 3deg at 25% 25%, rgba(42,71,88, 1), rgba(193,217,5, 1) 2deg 5deg, rgba(42,71,88, 1), rgba(193,217,5, 1) 15deg 18deg, rgba(42,71,88, 1) 20deg);
+	background-repeat: no-repeat;
+    /* background-size: cover; */
+    object-fit: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
 /* Global Styinging */
 body {
-    background: #bada55;
+    /* background: #bada55; */
     font-family: 'Barlow', sans-serif;
     overflow-x: hidden;
 }
@@ -40,7 +65,7 @@ h1, h2 {
 /* Logo Styling */
 
 .header {
-	background: rgba(104, 151, 187, 1);
+	/* background: rgba(104, 151, 187, 1); */
 	margin-top: 0;
 }
 
@@ -99,7 +124,7 @@ a:hover {
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
     .header {
-        background: rgba(104, 151, 187, 1);
+        /* background: rgba(104, 151, 187, 1); */
         margin-top: 0;
         position: sticky;
         top: 0;
@@ -120,6 +145,10 @@ a:hover {
     a {
         display: block;
     }
+
+	a:hover {
+		color: #fd8c00;
+	}
 
     /* Responsive Hamburger menu styling */
     .hamburger {
@@ -176,7 +205,7 @@ a:hover {
 /* Contect Form Styling */
 
 form {
-	background: #ffc600;
+	background: rgba(255, 198, 0, 0);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -231,7 +260,7 @@ input {
 	appearance: none;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	background: #ffc600;
+	background: rgba(255, 198, 0, 0);
 	border: none;
 	font-size: 0.9rem;
 	outline: none;
@@ -239,7 +268,7 @@ input {
 }
 
 .contact-form-wrapper {
-	background: #ffc600;
+	background: rgba(240,232,225, 0.5);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -294,7 +323,8 @@ input {
 }
 
 .warning-wrapper span {
-	color: #fff7db;
+	/* color: #fff7db;
+	color: black; */
 	font-weight: normal;
 	text-decoration: underline;
 }
@@ -411,7 +441,8 @@ input[name="email"]:-moz-placeholder {
 
 form button {
 	background: #34d0a5;
-	border: 1px solid;
+	border: 2px solid;
+	/* border: none; */
 	border-radius: 3px;
 	outline: none;
     font-size: 1.3rem;
@@ -420,17 +451,18 @@ form button {
 }
 
 form button:hover {
-    background: #b26ca2;
+    background: #ac4bff;
+	border: none;
     /* border-radius: 3px; */
     box-shadow: 0 1px 2px 2px #34686f;
     color: #fff;
-    /* margin: 0 auto; */
     padding: 0.75rem;
     width: 6rem;
 }
 
 form button:active {
-    background: #b26ca2;
+    background: #ac4bff;
+	border: none;
     /* border-radius: 3px; */
     box-shadow: 0 4px 5px 5px #34686f;
     color: #fff;
@@ -445,7 +477,7 @@ form button:active {
 
 /* Styling for .active class for active page url */
 .active {
-	color: #f2b07a;
+	color: #c8412d;
 }
 
 /* End styling for .active class for active page url */

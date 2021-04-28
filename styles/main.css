@@ -16,6 +16,28 @@ body {
     overflow-x: hidden;
 }
 
+.index-body {
+    background-image: repeating-radial-gradient(#ffe556, #ffe556 2.5%, #00bcf0 2.5%, #00bcf0 5%);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    object-fit: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.portfolio-body {
+ background-image: repeating-linear-gradient(to top left, #ffe556, #ffe556 0.31rem, #00bcf0 0.31rem, #00bcf0 0.62rem);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    object-fit: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
 a {
     color: #a10ebd;
 }
@@ -109,6 +131,7 @@ figcaption {
 	overflow-y: auto;
     text-align: center;
     width: 85%;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* End section styling for index.html */
@@ -131,7 +154,7 @@ figcaption {
 }
 
 .landing-article a:hover {
-    background: #b26ca2;
+    background: #ac4bff;
     border-radius: 3px;
     box-shadow: 0 1px 2px 2px #34686f;
     color: #fff;
@@ -141,7 +164,7 @@ figcaption {
 }
 
 .landing-article a:active {
-    background: #b26ca2;
+    background: #ac4bff;
     border-radius: 3px;
     box-shadow: 0 4px 5px 5px #34686f;
     color: #fff;
@@ -243,10 +266,11 @@ p.caption a {
 .header {
 	margin-top: 0;
 	width: 100%;
+    background: rgba(104, 151, 187, 1);
 }
 
-.header, .index-header {
-	background: rgba(104, 151, 187, 1);
+.index-header {
+    background: transparent;
 }
 
 .brand {
@@ -294,7 +318,7 @@ a {
 }
 
 a:hover {
-    color: #fd8c00;
+    color: #ac4bff;
 }
 
 .hamburger {
@@ -327,6 +351,10 @@ a:hover {
     a {
         display: block;
     }
+
+    a:hover {
+		color: #fd8c00;
+	}
 
     /* Responsive Hamburger menu styling */
     .hamburger {
@@ -380,13 +408,13 @@ a:hover {
 
 /* Styling for .active class for active page url */
 .active {
-	color: #f2b07a;
+    color: #c8412d;
 }
 
 /* End styling for .active class for active page url */
 
 /* End media query for site navigation for screens smaller than 900px */
-/* Site Footer  Styling */
+/* Site Footer Styling */
 .site-credits {
 	font-size: 1.3rem;
 	letter-spacing: 0.07rem;
