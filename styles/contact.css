@@ -1,11 +1,11 @@
 /* CSS Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
-    -webkit-locale: auto;
-    white-space: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
+  -webkit-locale: auto;
+  white-space: normal;
 }
 
 /* End CSS Reset */
@@ -13,191 +13,203 @@
 /* contact-body class gradient styling */
 
 .contact-body {
-	background-image: repeating-conic-gradient(rgba(42,71,88, 1) 0 9deg, rgba(193,217,5, 1) 9deg 18deg);
-	background-repeat: no-repeat;
-    /* background-size: cover; */
-    object-fit: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    z-index: 0;
-    overflow-x: hidden;
+  background-image: repeating-conic-gradient(
+    rgba(42, 71, 88, 1) 0 9deg,
+    rgba(193, 217, 5, 1) 9deg 18deg
+  );
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
 .submit-body {
-	background-image: repeating-conic-gradient(from 3deg at 25% 25%, rgba(42,71,88, 1), rgba(193,217,5, 1) 2deg 5deg, rgba(42,71,88, 1), rgba(193,217,5, 1) 15deg 18deg, rgba(42,71,88, 1) 20deg);
-	background-repeat: no-repeat;
-    /* background-size: cover; */
-    object-fit: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    z-index: 0;
-    overflow-x: hidden;
+  background-image: repeating-conic-gradient(
+    from 3deg at 25% 25%,
+    rgba(42, 71, 88, 1),
+    rgba(193, 217, 5, 1) 2deg 5deg,
+    rgba(42, 71, 88, 1),
+    rgba(193, 217, 5, 1) 15deg 18deg,
+    rgba(42, 71, 88, 1) 20deg
+  );
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
 /* Global Styinging */
 body {
-    /* background: #bada55; */
-    font-family: 'Barlow', sans-serif;
-    overflow-x: hidden;
+  /* background: #bada55; */
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
-    color: #a10ebd;
+  color: #a10ebd;
 }
 
-h1, .submit-main-heading {
+h1,
+.submit-main-heading {
   text-align: center;
 }
 
-h1, h2 {
-    /* to fix the way Safari 14+ reads certain Google Fonts property declarations incorrectly */
-    font-weight: normal;
+h1,
+h2 {
+  /* to fix the way Safari 14+ reads certain Google Fonts property declarations incorrectly */
+  font-weight: normal;
 }
 
 .submit-article {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 25vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25vh auto;
 }
 
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 
 .header {
-	/* background: rgba(104, 151, 187, 1); */
-	margin-top: 0;
+  /* background: rgba(104, 151, 187, 1); */
+  margin-top: 0;
 }
 
 .brand {
-	display: flex;
-	font-size: 2.25rem;
-	font-weight: bold;
-	height: auto;
-	width: 100%;
-	width: 7.8125rem;
+  display: flex;
+  font-size: 2.25rem;
+  font-weight: bold;
+  height: auto;
+  width: 100%;
+  width: 7.8125rem;
 }
 
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
-    background: transparent;
-	display: flex;
-	align-items: center;
-	height: 70px;
-    justify-content: space-between;
-    padding-bottom: 0;
-	width: 100vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  padding-bottom: 0;
+  width: 100vw;
 }
 
 .main-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 1.5rem;
-	margin-right: 1rem;
-	margin-top: 2rem;
-	width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  width: 100vw;
 }
 
 li {
-    font-size: 2.75vh;
-    list-style-type: none;
-    margin: 0.5vw;
+  font-size: 2.75vh;
+  list-style-type: none;
+  margin: 0.5vw;
 }
 
 a {
-    color: #000;
-    cursor: pointer;
-    padding: 2vw;
-    text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  padding: 2vw;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #fd8c00;
+  color: #fd8c00;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 /* End nav styles using Flexbox (screens greater than 899px) */
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
-    .header {
-        /* background: rgba(104, 151, 187, 1); */
-        margin-top: 0;
-        position: sticky;
-        top: 0;
-    }
+  .header {
+    /* background: rgba(104, 151, 187, 1); */
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+  }
 
-	.brand {
-		width: 100%;
-		width: 7.8125rem;
-		height: auto;
-		display: flex;
-		margin-left: 0.5rem;
-	}
+  .brand {
+    width: 100%;
+    width: 7.8125rem;
+    height: auto;
+    display: flex;
+    margin-left: 0.5rem;
+  }
 
-    li {
-        margin: 0 0 0 1.5rem;
-    }
+  li {
+    margin: 0 0 0 1.5rem;
+  }
 
-    a {
-        display: block;
-    }
+  a {
+    display: block;
+  }
 
-	a:hover {
-		color: #fd8c00;
-	}
+  a:hover {
+    color: #fd8c00;
+  }
 
-    /* Responsive Hamburger menu styling */
-    .hamburger {
-        background-color: transparent;
-        /* show the hamburger menu image */
-        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-        background-size: 100%;
-        border: none;
-        cursor: pointer;
-        display: block;
-        height: 36px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        width: 36px;
-        /* always keep ham on top of everything */
-        z-index: 10000;
-    }
+  /* Responsive Hamburger menu styling */
+  .hamburger {
+    background-color: transparent;
+    /* show the hamburger menu image */
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 36px;
+    /* always keep ham on top of everything */
+    z-index: 10000;
+  }
 
-    /* change hamburger image to close */
-    .showClose {
-        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
-        background-size: 100%;
-    }
+  /* change hamburger image to close */
+  .showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+    background-size: 100%;
+  }
 
-    .main-nav {
-		background: #6897BB;
-		display: block;
-        height: 100vh;
-        left: 0;
-        margin-top: 0;
-		overflow-y: hidden;
-        padding-top: 5rem;
-        position: fixed;
-        top: 0;
-        /* hide the menu above the screen by default */
-        transform: translateY(-100%);
-        /* transition adds a little animation when sliding in and out the menu */
-        transition: transform 0.2s ease;
-        width: 100vw;
-        /* needed for me because of my intro box in index.html.
+  .main-nav {
+    background: #6897bb;
+    display: block;
+    height: 100vh;
+    left: 0;
+    margin-top: 0;
+    overflow-y: hidden;
+    padding-top: 5rem;
+    position: fixed;
+    top: 0;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+    width: 100vw;
+    /* needed for me because of my intro box in index.html.
 		Otherwise navigation backgrop would be behind the intro box when opened */
-        z-index: 10;
-    }
+    z-index: 10;
+  }
 
-    .showNav {
-        /* show the menu */
-        transform: translateY(0);
-    }
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
 }
 
 /* End media query for site navigation for screens smaller than 900px */
@@ -205,172 +217,174 @@ a:hover {
 /* Contect Form Styling */
 
 form {
-	background: rgba(255, 198, 0, 0);
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0 auto;
-	max-width: 600px;
-	padding: 1.5rem 0.5rem 0;
-	width: 90%;
+  background: rgba(255, 198, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1.5rem 0.5rem 0;
+  width: 90%;
 }
 
 legend {
-	margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 fieldset {
-	border-color: #000;
-	border-style: double;
-	border-width: 6px;
-	display: flex;
-	align-items: center;
-	margin-top: 1.5rem;
-	max-width: 600px;
-	width: 97.5%;
+  border-color: #000;
+  border-style: double;
+  border-width: 6px;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  max-width: 600px;
+  width: 97.5%;
 }
 
 fieldset > label {
-	flex: 1 0 120px;
-	max-width: 50%;
+  flex: 1 0 120px;
+  max-width: 50%;
 }
 
 fieldset > label + * {
-	flex: 1 0 50%;
+  flex: 1 0 50%;
 }
 
 fieldset input {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 36px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 36px;
 }
 
 legend {
-	padding-left: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 label {
-	margin-left: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 input {
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	background: rgba(255, 198, 0, 0);
-	border: none;
-	font-size: 0.9rem;
-	outline: none;
-    width: 97.5%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: rgba(255, 198, 0, 0);
+  border: none;
+  font-size: 0.9rem;
+  outline: none;
+  width: 97.5%;
 }
 
 .contact-form-wrapper {
-	background: rgba(240,232,225, 0.5);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 15vh auto;
-	max-width: 600px;
-	width: 90%;
+  background: rgba(240, 232, 225, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15vh auto;
+  max-width: 600px;
+  width: 90%;
 }
 
 /* section .contact-info class styling */
 
 .contact-info {
-	width: 85%;
+  width: 85%;
 }
 
 .contact-info fieldset {
-	background: #34d0a5;
+  background: #34d0a5;
 }
 
 .contact-info h2 {
-	text-align: center;
-	margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .contact-info p {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0.5rem;
 }
 
 /* section .warning class styling */
 
 .warning {
-	display: block;
-	margin: 0 auto 1.5rem;
-	max-width: 600px;
-	width: 90%;
+  display: block;
+  margin: 0 auto 1.5rem;
+  max-width: 600px;
+  width: 90%;
 }
 
 .warning h2 {
-	margin-top: 3rem;
-	text-align: center;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .warning-wrapper fieldset {
-	display: flex;
-	align-items: center;
-	background: #e54141;
-	margin: 1.5rem auto;
-	padding: 5px 5px 10px;
-	width: 94%;
+  display: flex;
+  align-items: center;
+  background: #e54141;
+  margin: 1.5rem auto;
+  padding: 5px 5px 10px;
+  width: 94%;
 }
 
 .warning-wrapper span {
-	/* color: #fff7db;
+  /* color: #fff7db;
 	color: black; */
-	font-weight: normal;
-	text-decoration: underline;
+  font-weight: normal;
+  text-decoration: underline;
 }
 
 /* div .info-wrapper class styling (wraps aorund fieldset containging
 Maria tel and email info) */
 
 .info-wrapper fieldset {
-	display: flex;
-	align-items: center;
-	margin: 0 auto 3rem;
-	width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 3rem;
+  width: 100%;
 }
 
 @media (max-width: 799px) {
-	fieldset, input {
-		display: block;
-	}
-	label, input[placeholder] {
-		margin-left: 0.25rem;
-	}
+  fieldset,
+  input {
+    display: block;
+  }
+  label,
+  input[placeholder] {
+    margin-left: 0.25rem;
+  }
 
-	.contact-info {
-		max-width: 600px;
-		text-align: center;
-		width: 90%;
-	}
+  .contact-info {
+    max-width: 600px;
+    text-align: center;
+    width: 90%;
+  }
 
-	.contact-info h2 {
-		text-align: center;
-	}
+  .contact-info h2 {
+    text-align: center;
+  }
 
-	.contact-info p:nth-of-type(1) {
-		margin-top: 0.5rem;
-	}
+  .contact-info p:nth-of-type(1) {
+    margin-top: 0.5rem;
+  }
 
-	.info-wrapper p {
-		display: block;
-		margin: 0 auto;
-	}
+  .info-wrapper p {
+    display: block;
+    margin: 0 auto;
+  }
 
-	.info-wrapper fieldset {
-		display: block;
-		width: 95%;
-		margin: 0 auto 3rem;
-	}
+  .info-wrapper fieldset {
+    display: block;
+    width: 95%;
+    margin: 0 auto 3rem;
+  }
 }
 
 /* Input placeholder font color styling fix across browsers */
@@ -396,23 +410,23 @@ input[name="firstname"]:-moz-placeholder {
 }
 
 input[name="lastname"]::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #000;
+  /* Chrome/Opera/Safari */
+  color: #000;
 }
 
 input[name="lastname"]::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #000;
+  /* Firefox 19+ */
+  color: #000;
 }
 
 input[name="lastname"]:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #000;
+  /* IE 10+ */
+  color: #000;
 }
 
 input[name="lastname"]:-moz-placeholder {
-    /* Firefox 18- */
-    color: #000;
+  /* Firefox 18- */
+  color: #000;
 }
 
 input[name="email"]::-webkit-input-placeholder {
@@ -440,35 +454,35 @@ input[name="email"]:-moz-placeholder {
 /* Form Button Styling */
 
 form button {
-	background: #34d0a5;
-	border: 2px solid;
-	/* border: none; */
-	border-radius: 3px;
-	outline: none;
-    font-size: 1.3rem;
-	padding: 0.5rem;
-	margin: 0.25rem 0.25rem 0.75rem;
+  background: #34d0a5;
+  border: 2px solid;
+  /* border: none; */
+  border-radius: 3px;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  margin: 0.25rem 0.25rem 0.75rem;
 }
 
 form button:hover {
-    background: #ac4bff;
-	border: none;
-    /* border-radius: 3px; */
-    box-shadow: 0 1px 2px 2px #34686f;
-    color: #fff;
-    padding: 0.75rem;
-    width: 6rem;
+  background: #ac4bff;
+  border: none;
+  /* border-radius: 3px; */
+  box-shadow: 0 1px 2px 2px #34686f;
+  color: #fff;
+  padding: 0.75rem;
+  width: 6rem;
 }
 
 form button:active {
-    background: #ac4bff;
-	border: none;
-    /* border-radius: 3px; */
-    box-shadow: 0 4px 5px 5px #34686f;
-    color: #fff;
-    /* margin: 0 auto; */
-    padding: 0.75rem;
-    width: 6rem;
+  background: #ac4bff;
+  border: none;
+  /* border-radius: 3px; */
+  box-shadow: 0 4px 5px 5px #34686f;
+  color: #fff;
+  /* margin: 0 auto; */
+  padding: 0.75rem;
+  width: 6rem;
 }
 
 /* End contact.html button styling */
@@ -477,35 +491,35 @@ form button:active {
 
 /* Styling for .active class for active page url */
 .active {
-	color: #c8412d;
+  color: #c8412d;
 }
 
 /* End styling for .active class for active page url */
 
 /* Site Footer  Styling */
 .site-credits {
-	font-size: 1.3rem;
-	letter-spacing: 0.07rem;
-    text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.07rem;
+  text-align: center;
 }
 
 /* Sticky Footer Styling */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Site-content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .site-credits {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 /* End Sticky Footer Styling */

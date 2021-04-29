@@ -1,108 +1,120 @@
 /* CSS Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
-    -webkit-locale: auto;
-    white-space: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* to fix the way Safari 14+ reads certain Google Fonts incorrectly */
+  -webkit-locale: auto;
+  white-space: normal;
 }
 
 /* End CSS Reset */
 /* Global Styinging */
 body {
-    background: #bada55;
-    font-family: 'Barlow', sans-serif;
-    overflow-x: hidden;
+  background: #bada55;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
 }
 
 .index-body {
-    background-image: repeating-radial-gradient(#ffe556, #ffe556 2.5%, #00bcf0 2.5%, #00bcf0 5%);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    object-fit: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    z-index: 0;
-    overflow-x: hidden;
+  background-image: repeating-radial-gradient(
+    #ffe556,
+    #ffe556 2.5%,
+    #00bcf0 2.5%,
+    #00bcf0 5%
+  );
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
 .portfolio-body {
- background-image: repeating-linear-gradient(to top left, #ffe556, #ffe556 0.31rem, #00bcf0 0.31rem, #00bcf0 0.62rem);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    object-fit: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    z-index: 0;
-    overflow-x: hidden;
+  background-image: repeating-linear-gradient(
+    to top left,
+    #ffe556,
+    #ffe556 0.31rem,
+    #00bcf0 0.31rem,
+    #00bcf0 0.62rem
+  );
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
 a {
-    color: #a10ebd;
+  color: #a10ebd;
 }
 
-h1, h2 {
-    /* to fix the way Safari 14+ reads certain Google Fonts property declarations incorrectly */
-    font-weight: normal;
+h1,
+h2 {
+  /* to fix the way Safari 14+ reads certain Google Fonts property declarations incorrectly */
+  font-weight: normal;
 }
 
 /* CSS Grid section styling for portfolio.html page. */
 section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* End CSS Grid section styling for portfolio.html page */
 /* image styling */
 img {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    max-width: 800px;
-    max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 800px;
+  max-width: 100%;
 }
 
 figure {
-    border: 1px solid;
-    margin: 4rem auto;
-    max-width: 800px;
-    width: 90%;
-	/* add so that things would display correctly and figcaption would
+  border: 1px solid;
+  margin: 4rem auto;
+  max-width: 800px;
+  width: 90%;
+  /* add so that things would display correctly and figcaption would
 	display at all because set to position: absolute. */
-	position: relative;
+  position: relative;
 }
 
 figure > img {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 figcaption {
-    margin: 0 auto;
-    max-width: 800px;
-    padding-bottom: 0.25rem;
-	/* *Added padding-left and right after I set the figure element to
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 0.25rem;
+  /* *Added padding-left and right after I set the figure element to
 	display: flex; After that addition there was no padding
 	to left or right of text within the figcaption area */
-	padding-left: 0.25rem;
-	padding-right: 0.25rem;
-    padding-top: 0.25rem;
-    text-align: center;
-    /* point this out to class and toggle it to show effect */
-    word-break: break-word;
-	/* Below added so that the figcaption text would overlay on top of image
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  text-align: center;
+  /* point this out to class and toggle it to show effect */
+  word-break: break-word;
+  /* Below added so that the figcaption text would overlay on top of image
 	instead of below */
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	background: rgba(255, 255, 255, 0.5);
-	font-weight: normal;
-	width: 100%;
-	/* alternative approach to transform: translateX(-50%) property declration */
-	/* position: absolute;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  width: 100%;
+  /* alternative approach to transform: translateX(-50%) property declration */
+  /* position: absolute;
     bottom: 0;
     left: 0;
     right: 0; */
@@ -111,129 +123,129 @@ figcaption {
 /* End global styling */
 /* h1 styling for index.html */
 #landing-main-heading {
-    margin-top: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 /* section styling for index.html */
 .landing-section {
-    background: linear-gradient(to bottom left, cyan 40%, orange 60%);
-    outline: 6px double;
-    font-family: 'Barlow', sans-serif;
-    height: 70vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 18vh auto;
-    max-width: 600px;
-	/* need to add this for strange devices that create fixed content
+  background: linear-gradient(to bottom left, cyan 40%, orange 60%);
+  outline: 6px double;
+  font-family: "Barlow", sans-serif;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 18vh auto;
+  max-width: 600px;
+  /* need to add this for strange devices that create fixed content
 	and no scroll like Microsoft Lumia 550. Now the content will fit for index.html */
-	overflow-y: auto;
-    text-align: center;
-    width: 85%;
-    background: rgba(255, 255, 255, 0.3);
+  overflow-y: auto;
+  text-align: center;
+  width: 85%;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* End section styling for index.html */
 /* article styling for index.html */
 .landing-article {
-    margin: auto;
-	text-align: center;
-    width: 100%;
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 .landing-article p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin: 1.25rem auto 1.25rem;
-    width: 90%;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 1.25rem auto 1.25rem;
+  width: 90%;
 }
 
 .landing-article a {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .landing-article a:hover {
-    background: #ac4bff;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px 2px #34686f;
-    color: #fff;
-    margin: 0 auto;
-    padding: 0.75rem;
-    width: 5rem;
+  background: #ac4bff;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 2px #34686f;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.75rem;
+  width: 5rem;
 }
 
 .landing-article a:active {
-    background: #ac4bff;
-    border-radius: 3px;
-    box-shadow: 0 4px 5px 5px #34686f;
-    color: #fff;
-    margin: 0 auto;
-    padding: 0.75rem;
-    width: 5rem;
+  background: #ac4bff;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 5px #34686f;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.75rem;
+  width: 5rem;
 }
 
 /* End article styling for index.html */
 
 /* media query specific to Microsoft Lumia 550. */
 @media (width: 640px) and (height: 360px) {
-	/* This is what has to change in .landing section in order for the h1 to show. */
-	#landing-main-heading {
-		margin-top: 5rem;
-	}
+  /* This is what has to change in .landing section in order for the h1 to show. */
+  #landing-main-heading {
+    margin-top: 5rem;
+  }
 }
 /* end media query specific to Microsoft Lumia 550. */
 
 /* media query smaller screens for section and article elements in index.html */
 @media (max-width: 799px) {
-    .landing-section {
-        margin: 12vh auto;
-        width: 90%;
-    }
+  .landing-section {
+    margin: 12vh auto;
+    width: 90%;
+  }
 
-    .landing-article p {
-        margin: 1.25rem auto;
-        width: 90%;
-    }
+  .landing-article p {
+    margin: 1.25rem auto;
+    width: 90%;
+  }
 }
 
 /* End media query smaller screens for section and article elements in index.html */
 /* h1 styling in portfolio.html */
 .main-heading {
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
-    text-align: center;
-    width: 97.5%;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 97.5%;
 }
 
 /* h2 Section heading styling in portfolio.html */
 .section-heading {
-    background: rgba(104, 151, 187, 0.7);
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 97.5%;
+  background: rgba(104, 151, 187, 0.7);
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 97.5%;
 }
 
 /* a element class attribution-link styling in portfolio.html */
 .attribution-link {
-    color: #0030ff;
+  color: #0030ff;
 }
 
 .attribution-link:hover {
-    color: #000;
+  color: #000;
 }
 
 /* End a element class attribution-link styling in portfolio.html */
 
 /* p element caption class styling in portfolio.html - wraps around the entire CC attribution */
 p.caption a {
-    font-style: italic;
-    padding: 0;
-    text-align: center;
+  font-style: italic;
+  padding: 0;
+  text-align: center;
 }
 
 /* End p element caption class styling in portfolio.html - wraps around the entire CC attribution */
@@ -241,21 +253,21 @@ p.caption a {
 /* media query min-width: 480px for landing section height. Way too big beyond that point. */
 
 @media (min-width: 480px) {
-	.landing-section {
-		height: 50vh;
-	}
+  .landing-section {
+    height: 50vh;
+  }
 }
 
 /* media query for section element CSS Grid columns in viewport < 899px in portfolio.html */
 @media (max-width: 899px) {
-	section {
-        display: block;
-        margin: 0 auto;
-        width: 97.5%;
-    }
-	p.caption a {
-		display: inline-block;
-	}
+  section {
+    display: block;
+    margin: 0 auto;
+    width: 97.5%;
+  }
+  p.caption a {
+    display: inline-block;
+  }
 }
 
 /* End media query for section element CSS Grid columns in viewport < 899px in portfolio.html */
@@ -264,151 +276,155 @@ p.caption a {
 /* Logo Styling */
 
 .header {
-	margin-top: 0;
-	width: 100%;
-    background: rgba(104, 151, 187, 1);
+  margin-top: 0;
+  width: 100%;
+  background: rgba(104, 151, 187, 1);
 }
 
 .index-header {
-    background: transparent;
+  background: transparent;
 }
 
 .brand {
-	width: 100%;
-	max-width: 7.8125rem;
-	height: auto;
-	display: flex;
-	margin-left: 1.125rem;
-	font-size: 2.25rem;
-	font-weight: bold;
-	padding: 0;
+  width: 100%;
+  max-width: 7.8125rem;
+  height: auto;
+  display: flex;
+  margin-left: 1.125rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  padding: 0;
 }
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
-    background: transparent;
-    width: 100vw;
-	display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+  background: transparent;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  height: 70px;
+  align-items: center;
 }
 
 .main-nav {
-	width: 100vw;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 1.5rem;
-	margin-right: 1rem;
-	margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
 }
 
 li {
-    font-size: 2.75vh;
-    list-style-type: none;
-    margin: 0.5vw;
+  font-size: 2.75vh;
+  list-style-type: none;
+  margin: 0.5vw;
 }
 
 a {
-    color: #000;
-    cursor: pointer;
-    padding: 2vw;
-    text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  padding: 2vw;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #ac4bff;
+  color: #ac4bff;
+}
+
+.header a:hover {
+  color: #fd8c00;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 /* End nav styles using Flexbox (screens greater than 899px) */
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
-    .header {
-        background: rgba(104, 151, 187, 1);
-        margin-top: 0;
-        position: sticky;
-        top: 0;
-		z-index: 10;
-    }
+  .header {
+    background: rgba(104, 151, 187, 1);
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
 
-	.brand {
-		margin-left: 1.125rem;
-		width: 100%;
-		max-width: 7.8125rem;
-		height: auto;
-		display: flex;
-	}
+  .brand {
+    margin-left: 1.125rem;
+    width: 100%;
+    max-width: 7.8125rem;
+    height: auto;
+    display: flex;
+  }
 
-    li {
-        margin: 0 0 0 1.5rem;
-    }
+  li {
+    margin: 0 0 0 1.5rem;
+  }
 
-    a {
-        display: block;
-    }
+  a {
+    display: block;
+  }
 
-    a:hover {
-		color: #fd8c00;
-	}
+  a:hover {
+    color: #fd8c00;
+  }
 
-    /* Responsive Hamburger menu styling */
-    .hamburger {
-        background-color: transparent;
-        /* show the hamburger menu image */
-        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-        background-size: 100%;
-        border: none;
-        cursor: pointer;
-        display: block;
-        height: 36px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        width: 36px;
-        /* always keep ham on top of everything */
-        z-index: 10000;
-    }
+  /* Responsive Hamburger menu styling */
+  .hamburger {
+    background-color: transparent;
+    /* show the hamburger menu image */
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 36px;
+    /* always keep ham on top of everything */
+    z-index: 10000;
+  }
 
-    /* change hamburger image to close */
-    .showClose {
-        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
-        background-size: 100%;
-    }
+  /* change hamburger image to close */
+  .showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+    background-size: 100%;
+  }
 
-    .main-nav {
-		display: block;
-        background: #6897BB;
-        height: 100vh;
-        left: 0;
-		margin-top: 0;
-		padding-top: 5rem;
-        overflow-y: hidden;
-        position: fixed;
-        top: 0;
-        /* hide the menu above the screen by default */
-        transform: translateY(-100%);
-        /* transition adds a little animation when sliding in and out the menu */
-        transition: transform 0.2s ease;
-        width: 100vw;
-        /* needed for me because of my intro box in index.html.
+  .main-nav {
+    display: block;
+    background: #6897bb;
+    height: 100vh;
+    left: 0;
+    margin-top: 0;
+    padding-top: 5rem;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+    width: 100vw;
+    /* needed for me because of my intro box in index.html.
 		Otherwise navigation backgrop would be behind the intro box when opened */
-        z-index: 10;
-    }
+    z-index: 10;
+  }
 
-    .showNav {
-        /* show the menu */
-        transform: translateY(0);
-    }
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
 }
 
 /* Styling for .active class for active page url */
 .active {
-    color: #c8412d;
+  color: #c8412d;
 }
 
 /* End styling for .active class for active page url */
@@ -416,28 +432,28 @@ a:hover {
 /* End media query for site navigation for screens smaller than 900px */
 /* Site Footer Styling */
 .site-credits {
-	font-size: 1.3rem;
-	letter-spacing: 0.07rem;
-    text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.07rem;
+  text-align: center;
 }
 
 /* Sticky Footer Styling */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Site-content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .site-credits {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 /* End Sticky Footer Styling */

@@ -1,61 +1,82 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Linear gradient styling to body */
 
 .about-body {
-    background: repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
-        rgba(255, 153, 0, 0.3) 80px, rgba(255, 255, 0, 0.3) 120px,
-        rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
-        rgba(75, 0, 130, 0.3) 240px, rgba(238, 130, 238, 0.3) 280px,
-        rgba(255, 0, 0, 0.3) 300px), 
-        repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.3) 30px,
-        rgba(255, 153, 0, 0.3) 60px, rgba(255, 255, 0, 0.3) 90px,
-        rgba(0, 255, 0, 0.3) 120px, rgba(0, 0, 255, 0.3) 150px,
-        rgba(75, 0, 130, 0.3) 180px, rgba(238, 130, 238, 0.3) 210px,
-        rgba(255, 0, 0, 0.3) 230px),
-        repeating-linear-gradient(23deg, rgba(255,229,86, 0.5) 50px, rgba(0,188,240, 0.3) 100px,
-        rgba(48,53,57, 0.5) 150px, rgba(200,65,45, 0.3) 200px, rgba(225,235,237, 0.5) 250px,
-        rgba(65,21,122, 0.5) 300px, rgba(122,72,176, 0.5) 350px, rgba(255,229,86, 0.5) 370px);
-        background-repeat: no-repeat;
-        /* background-size: cover; */
-        object-fit: cover;
-        background-attachment: fixed;
-        min-height: 100vh;
-        z-index: 0;
-        overflow-x: hidden;
+  background: repeating-linear-gradient(
+      190deg,
+      rgba(255, 0, 0, 0.5) 40px,
+      rgba(255, 153, 0, 0.3) 80px,
+      rgba(255, 255, 0, 0.3) 120px,
+      rgba(0, 255, 0, 0.5) 160px,
+      rgba(0, 0, 255, 0.5) 200px,
+      rgba(75, 0, 130, 0.3) 240px,
+      rgba(238, 130, 238, 0.3) 280px,
+      rgba(255, 0, 0, 0.3) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(255, 0, 0, 0.3) 30px,
+      rgba(255, 153, 0, 0.3) 60px,
+      rgba(255, 255, 0, 0.3) 90px,
+      rgba(0, 255, 0, 0.3) 120px,
+      rgba(0, 0, 255, 0.3) 150px,
+      rgba(75, 0, 130, 0.3) 180px,
+      rgba(238, 130, 238, 0.3) 210px,
+      rgba(255, 0, 0, 0.3) 230px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      rgba(255, 229, 86, 0.5) 50px,
+      rgba(0, 188, 240, 0.3) 100px,
+      rgba(48, 53, 57, 0.5) 150px,
+      rgba(200, 65, 45, 0.3) 200px,
+      rgba(225, 235, 237, 0.5) 250px,
+      rgba(65, 21, 122, 0.5) 300px,
+      rgba(122, 72, 176, 0.5) 350px,
+      rgba(255, 229, 86, 0.5) 370px
+    );
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
 /* Global Styling */
 body {
-    overflow-x: hidden;
-    font-family: 'Barlow', sans-serif;
-    background: #bada55;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  background: #bada55;
 }
 
 h1 {
-    margin-top: 3rem;
-	font-size: 2.5rem;
+  margin-top: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 blockquote {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-section h1, h2 {
-    text-align: center;
+section h1,
+h2 {
+  text-align: center;
 }
 
 /* Styling for .active class for active page url */
 .active {
-	color: rgba(122,72,176, 1);
+  color: rgba(122, 72, 176, 1);
 }
 
 /* End Global Styling */
@@ -63,236 +84,236 @@ section h1, h2 {
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 .header {
-	/* background: rgba(104, 151, 187, 1); */
-    margin-top: 0;
+  /* background: rgba(104, 151, 187, 1); */
+  margin-top: 0;
 }
 
 /* I changed .logo class to .brand class */
 .brand {
-	width: 100%;
-	width: 7.8125rem;
-	height: auto;
-	display: flex;
-	font-size: 2.25rem;
-	font-weight: bold;
+  width: 100%;
+  width: 7.8125rem;
+  height: auto;
+  display: flex;
+  font-size: 2.25rem;
+  font-weight: bold;
 }
 
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
-    background: transparent;
-    display: flex;
-    align-items: center;
-    height: 70px;
-    justify-content: space-between;
-    padding-bottom: 0;
-    width: 100vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  padding-bottom: 0;
+  width: 100vw;
 }
 
 .main-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 1.5rem;
-    margin-right: 1rem;
-    margin-top: 2rem;
-    width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  width: 100vw;
 }
 
 li {
-    font-size: 2.75vh;
-    list-style-type: none;
-    margin: 0.5vw;
+  font-size: 2.75vh;
+  list-style-type: none;
+  margin: 0.5vw;
 }
 
 a {
-    color: #000;
-    cursor: pointer;
-    padding: 2vw;
-    text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  padding: 2vw;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #c8412d;
+  color: #c8412d;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 /* End nav styles using Flexbox (screens greater than 899px) */
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
-    .header {
-        /* background: rgba(104, 151, 187, 1); */
-        margin-top: 0;
-        position: sticky;
-        top: 0;
-    }
+  .header {
+    /* background: rgba(104, 151, 187, 1); */
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+  }
 
-	/* I changed .logo class to .brand class */
-	.brand {
-		margin-left: 0.5rem;
-		width: 100%;
-		width: 7.8125rem;
-		height: auto;
-		display: flex;
-	}
+  /* I changed .logo class to .brand class */
+  .brand {
+    margin-left: 0.5rem;
+    width: 100%;
+    width: 7.8125rem;
+    height: auto;
+    display: flex;
+  }
 
-    li {
-        margin: 0 0 0 1.5rem;
-    }
+  li {
+    margin: 0 0 0 1.5rem;
+  }
 
-    a {
-        display: block;
-    }
+  a {
+    display: block;
+  }
 
-    a:hover {
-		color: #fd8c00;
-	}
+  a:hover {
+    color: #fd8c00;
+  }
 
-    .active {
-        color: #c8412d;
-    }
+  .active {
+    color: #c8412d;
+  }
 
-    /* Responsive Hamburger menu styling */
-    .hamburger {
-        background-color: transparent;
-        /* show the hamburger menu image */
-        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-        background-size: 100%;
-        border: none;
-        cursor: pointer;
-        display: block;
-        height: 36px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        width: 36px;
-        /* always keep ham on top of everything */
-        z-index: 10000;
-    }
+  /* Responsive Hamburger menu styling */
+  .hamburger {
+    background-color: transparent;
+    /* show the hamburger menu image */
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 36px;
+    /* always keep ham on top of everything */
+    z-index: 10000;
+  }
 
-    /* change hamburger image to close */
-    .showClose {
-        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
-        background-size: 100%;
-    }
+  /* change hamburger image to close */
+  .showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+    background-size: 100%;
+  }
 
-    .main-nav {
-        display: block;
-        background: #6897BB;
-        height: 100vh;
-        left: 0;
-        margin-top: 0;
-        padding-top: 5rem;
-        overflow-y: hidden;
-        position: fixed;
-        top: 0;
-        /* hide the menu above the screen by default */
-        transform: translateY(-100%);
-        /* transition adds a little animation when sliding in and out the menu */
-        transition: transform 0.2s ease;
-        width: 100vw;
-        /* needed for me because of my intro box in index.html.
+  .main-nav {
+    display: block;
+    background: #6897bb;
+    height: 100vh;
+    left: 0;
+    margin-top: 0;
+    padding-top: 5rem;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+    width: 100vw;
+    /* needed for me because of my intro box in index.html.
 		Otherwise navigation backgrop would be behind the intro box when opened */
-        z-index: 10;
-    }
+    z-index: 10;
+  }
 
-    .showNav {
-        /* show the menu */
-        transform: translateY(0);
-    }
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
 }
 
 /* End media query for site navigation for screens smaller than 900px */
 /* Section quote container styling */
 .quote-container {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Barlow', sans-serif;
-    height: 50vh;
-    justify-content: center;
-    margin: 3rem auto;
-    margin: 12vh auto;
-    max-width: 800px;
-    width: 90%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Barlow", sans-serif;
+  height: 50vh;
+  justify-content: center;
+  margin: 3rem auto;
+  margin: 12vh auto;
+  max-width: 800px;
+  width: 90%;
 }
 
 /* article quote-cloud styling desktop */
 .quote-cloud {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0.5rem;
-    text-align: center;
-    width: 90%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+  text-align: center;
+  width: 90%;
 }
 
 .quote-cloud h2 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .quote-cloud blockquote {
-    color: #fff3f3;
-    margin: 0 auto;
-    text-shadow: 1px 2px 2px #000;
-    width: 90%;
+  color: #fff3f3;
+  margin: 0 auto;
+  text-shadow: 1px 2px 2px #000;
+  width: 90%;
 }
 
 /* end article quote-cloud styling desktop */
 /* font-size specific width: 640px and height: 360px (Microsoft Lumia 550) */
 @media (width: 640px) and (height: 360px) {
-	h1 {
-		margin-top: 0;
-	}
+  h1 {
+    margin-top: 0;
+  }
 }
 
 /* end font-size specific max-width: 640px and max-height: 360px (Microsoft Lumia 550) */
 /* font-size styling h1, h2, blockquote media query min-width: 600px */
 @media (min-width: 600px) {
-    h1 {
-        font-size: 3.5rem;
-    }
+  h1 {
+    font-size: 3.5rem;
+  }
 
-    h2 {
-        font-size: 2.5rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
 
-    blockquote {
-        font-size: 2rem;
-    }
+  blockquote {
+    font-size: 2rem;
+  }
 }
 
 /* End media query smaller screens for section and article elements in index.html */
-
 
 /* End styling for .active class for active page url */
 
 /* Footer Styling */
 .site-credits {
-	font-size: 1.3rem;
-	letter-spacing: 0.07rem;
-    text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.07rem;
+  text-align: center;
 }
 
 /* Sticky Footer Styling */
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Site-content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .site-credits {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
