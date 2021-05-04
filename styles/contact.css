@@ -13,20 +13,20 @@
 /* contact-body class gradient styling */
 
 .contact-body {
+  background-attachment: fixed;
   background-image: repeating-conic-gradient(
     rgba(42, 71, 88, 1) 0 9deg,
     rgba(193, 217, 5, 1) 9deg 18deg
   );
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  object-fit: cover;
-  background-attachment: fixed;
   min-height: 100vh;
-  z-index: 0;
+  object-fit: cover;
   overflow-x: hidden;
+  z-index: 0;
 }
 
 .submit-body {
+  background-attachment: fixed;
   background-image: repeating-conic-gradient(
     from 3deg at 25% 25%,
     rgba(42, 71, 88, 1),
@@ -36,17 +36,14 @@
     rgba(42, 71, 88, 1) 20deg
   );
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  object-fit: cover;
-  background-attachment: fixed;
   min-height: 100vh;
-  z-index: 0;
+  object-fit: cover;
   overflow-x: hidden;
+  z-index: 0;
 }
 
 /* Global Styinging */
 body {
-  /* background: #bada55; */
   font-family: "Barlow", sans-serif;
   overflow-x: hidden;
 }
@@ -86,8 +83,8 @@ h2 {
   font-size: 2.25rem;
   font-weight: bold;
   height: auto;
+  max-width: 7.8125rem;
   width: 100%;
-  width: 7.8125rem;
 }
 
 /* End Header Logo Styling */
@@ -143,11 +140,11 @@ a:hover {
   }
 
   .brand {
-    width: 100%;
-    width: 7.8125rem;
-    height: auto;
     display: flex;
+    height: auto;
     margin-left: 0.5rem;
+    max-width: 7.8125rem;
+    width: 100%;
   }
 
   li {
@@ -335,8 +332,6 @@ input {
 }
 
 .warning-wrapper span {
-  /* color: #fff7db;
-	color: black; */
   font-weight: normal;
   text-decoration: underline;
 }
@@ -382,8 +377,8 @@ Maria tel and email info) */
 
   .info-wrapper fieldset {
     display: block;
-    width: 95%;
     margin: 0 auto 3rem;
+    width: 95%;
   }
 }
 
@@ -456,18 +451,16 @@ input[name="email"]:-moz-placeholder {
 form button {
   background: #34d0a5;
   border: 2px solid;
-  /* border: none; */
   border-radius: 3px;
-  outline: none;
   font-size: 1.3rem;
-  padding: 0.5rem;
   margin: 0.25rem 0.25rem 0.75rem;
+  outline: none;
+  padding: 0.5rem;
 }
 
 form button:hover {
   background: #ac4bff;
   border: none;
-  /* border-radius: 3px; */
   box-shadow: 0 1px 2px 2px #34686f;
   color: #fff;
   padding: 0.75rem;
@@ -477,10 +470,8 @@ form button:hover {
 form button:active {
   background: #ac4bff;
   border: none;
-  /* border-radius: 3px; */
   box-shadow: 0 4px 5px 5px #34686f;
   color: #fff;
-  /* margin: 0 auto; */
   padding: 0.75rem;
   width: 6rem;
 }

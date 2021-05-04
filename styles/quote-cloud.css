@@ -40,25 +40,24 @@
       rgba(122, 72, 176, 0.5) 350px,
       rgba(255, 229, 86, 0.5) 370px
     );
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  object-fit: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
-  z-index: 0;
+  object-fit: cover;
   overflow-x: hidden;
+  z-index: 0;
 }
 
 /* Global Styling */
 body {
-  overflow-x: hidden;
-  font-family: "Barlow", sans-serif;
   background: #bada55;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
-  margin-top: 3rem;
   font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 h2 {
@@ -90,12 +89,12 @@ h2 {
 
 /* I changed .logo class to .brand class */
 .brand {
-  width: 100%;
-  width: 7.8125rem;
-  height: auto;
   display: flex;
   font-size: 2.25rem;
   font-weight: bold;
+  height: auto;
+  max-width: 7.8125rem;
+  width: 100%;
 }
 
 /* End Header Logo Styling */
@@ -152,11 +151,11 @@ a:hover {
 
   /* I changed .logo class to .brand class */
   .brand {
-    margin-left: 0.5rem;
-    width: 100%;
-    width: 7.8125rem;
-    height: auto;
     display: flex;
+    height: auto;
+    margin-left: 0.5rem;
+    max-width: 7.8125rem;
+    width: 100%;
   }
 
   li {
@@ -200,8 +199,8 @@ a:hover {
   }
 
   .main-nav {
-    display: block;
     background: #6897bb;
+    display: block;
     height: 100vh;
     left: 0;
     margin-top: 0;

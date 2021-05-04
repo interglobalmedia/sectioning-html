@@ -17,6 +17,7 @@ body {
 }
 
 .index-body {
+  background-attachment: fixed;
   background-image: repeating-radial-gradient(
     #ffe556,
     #ffe556 2.5%,
@@ -24,15 +25,14 @@ body {
     #00bcf0 5%
   );
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  object-fit: cover;
-  background-attachment: fixed;
   min-height: 100vh;
-  z-index: 0;
+  object-fit: cover;
   overflow-x: hidden;
+  z-index: 0;
 }
 
 .portfolio-body {
+  background-attachment: fixed;
   background-image: repeating-linear-gradient(
     to top left,
     #ffe556,
@@ -41,12 +41,10 @@ body {
     #00bcf0 0.62rem
   );
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  object-fit: cover;
-  background-attachment: fixed;
   min-height: 100vh;
-  z-index: 0;
+  object-fit: cover;
   overflow-x: hidden;
+  z-index: 0;
 }
 
 a {
@@ -72,35 +70,34 @@ img {
   height: auto;
   margin: 0 auto;
   max-width: 800px;
-  max-width: 100%;
+  width: 100%;
 }
 
 figure {
   border: 1px solid;
   margin: 4rem auto;
   max-width: 800px;
-  width: 90%;
   /* add so that things would display correctly and figcaption would
 	display at all because set to position: absolute. */
   position: relative;
+  width: 90%;
 }
 
 figure > img {
+  height: 100%;
   object-fit: cover;
   width: 100%;
-  height: 100%;
 }
 
 figcaption {
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
   margin: 0 auto;
   max-width: 800px;
-  padding-bottom: 0.25rem;
   /* *Added padding-left and right after I set the figure element to
 	display: flex; After that addition there was no padding
 	to left or right of text within the figcaption area */
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-top: 0.25rem;
+  padding: 0.25rem;
   text-align: center;
   /* point this out to class and toggle it to show effect */
   word-break: break-word;
@@ -110,8 +107,6 @@ figcaption {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.5);
-  font-weight: normal;
   width: 100%;
   /* alternative approach to transform: translateX(-50%) property declration */
   /* position: absolute;
@@ -121,6 +116,7 @@ figcaption {
 }
 
 /* End global styling */
+
 /* h1 styling for index.html */
 #landing-main-heading {
   margin-top: 0.75rem;
@@ -128,22 +124,21 @@ figcaption {
 
 /* section styling for index.html */
 .landing-section {
-  background: linear-gradient(to bottom left, cyan 40%, orange 60%);
-  outline: 6px double;
-  font-family: "Barlow", sans-serif;
-  height: 70vh;
-  position: relative;
+  background: rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
+  font-family: "Barlow", sans-serif;
+  height: 70vh;
   justify-content: center;
   margin: 18vh auto;
   max-width: 600px;
+  outline: 6px double;
   /* need to add this for strange devices that create fixed content
 	and no scroll like Microsoft Lumia 550. Now the content will fit for index.html */
   overflow-y: auto;
+  position: relative;
   text-align: center;
   width: 85%;
-  background: rgba(255, 255, 255, 0.3);
 }
 
 /* End section styling for index.html */
@@ -276,9 +271,9 @@ p.caption a {
 /* Logo Styling */
 
 .header {
+  background: rgba(104, 151, 187, 1);
   margin-top: 0;
   width: 100%;
-  background: rgba(104, 151, 187, 1);
 }
 
 .index-header {
@@ -286,34 +281,34 @@ p.caption a {
 }
 
 .brand {
-  width: 100%;
-  max-width: 7.8125rem;
-  height: auto;
   display: flex;
-  margin-left: 1.125rem;
   font-size: 2.25rem;
   font-weight: bold;
+  height: auto;
+  margin-left: 1.125rem;
+  max-width: 7.8125rem;
   padding: 0;
+  width: 100%;
 }
 /* End Header Logo Styling */
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
   background: transparent;
-  width: 100vw;
   display: flex;
+  align-items: center;
+  height: 70px;
   justify-content: space-between;
   padding-bottom: 0;
-  height: 70px;
-  align-items: center;
+  width: 100vw;
 }
 
 .main-nav {
-  width: 100vw;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1.5rem;
   margin-right: 1rem;
   margin-top: 2rem;
+  width: 100vw;
 }
 
 li {
@@ -353,11 +348,11 @@ a:hover {
   }
 
   .brand {
-    margin-left: 1.125rem;
-    width: 100%;
-    max-width: 7.8125rem;
-    height: auto;
     display: flex;
+    height: auto;
+    margin-left: 1.125rem;
+    max-width: 7.8125rem;
+    width: 100%;
   }
 
   li {
@@ -397,8 +392,8 @@ a:hover {
   }
 
   .main-nav {
-    display: block;
     background: #6897bb;
+    display: block;
     height: 100vh;
     left: 0;
     margin-top: 0;
