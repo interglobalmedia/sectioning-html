@@ -29,6 +29,8 @@ On the ***other hand***, the `nav` *`section element`* ***more clearly*** `descr
 <section class="section">
     <h2 class="sentence">Semantic section elements in HTML5</h2>
 
+`main element`: ***represents*** the **dominant content** of the `body element``. The main` **content area** consists of `content` that is ***directly related*** to or ***expands upon*** the **central topic** of a `document`, or the **central functionality** of an `application`. The **content** of a `main element` should be ***unique*** to the `document` (`page`). **Content** that is ***repeated*** across a **set** of `documents` or `document sections` such as `sidebars`, `navigation links`, `copyright information`, `site logos`, and `search forms` ***shouldn't*** be ***included*** unless the `search form` is the **main function** of the **page**. The `main element` ***doesn't contribute*** to the `document`'s **outline**. ***Unlike elements*** such as `body`, ***headings***such as `h2`, etc., `main` ***doesn't affect*** the `DOM`'s **concept** of the **structure** of the **page**.** It's ***strictly informative***.
+
 `nav element` (***aka*** `HTML navigational element`): ***defines*** a `section` that ***contains*** `navigation links` that ***usually appear*** on a `site`. There ***can*** be `primary` and `secondary menus`, but a `nav element` ***cannot*** be ***nested*** inside ***another*** `nav element`.
 
 `article element` (***aka*** `HTML article element`): ***defines*** a ***piece*** of `self-contained content`. It ***does not*** only ***refer*** to the ***main content***, and **can** be ***used*** for `comments` and `widgets` as ***well***.
