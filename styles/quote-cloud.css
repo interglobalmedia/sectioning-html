@@ -309,7 +309,7 @@ body {
   flex-direction: column;
 }
 
-.Site-content {
+.Site-content-wrapper {
   flex: 1 0 auto;
 }
 
