@@ -117,6 +117,55 @@ figcaption {
 
 /* End global styling */
 
+/* CSS Grid section styling for grid.html page. */
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100vh;
+}
+
+@media (max-width: 799px) {
+    .landing-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* styling for grid.html */
+
+.landing-figure {
+  border: none;
+  margin: 2rem auto 4rem;
+  max-width: 800px;
+  /* add so that things would display correctly and figcaption would
+	display at all because set to position: absolute. */
+  position: relative;
+  width: 90%;
+}
+
+.landing-figure > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.landing-figcaption {
+  background: transparent;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 800px;
+  /* *Added padding-left and right after I set the figure element to
+	display: flex; After that addition there was no padding
+	to left or right of text within the figcaption area */
+  padding: 0.25rem;
+  text-align: center;
+  /* point this out to class and toggle it to show effect */
+  word-break: break-word;
+  position: relative;
+}
+
+/* end styling for grid.html */
+
 /* h1 styling for index.html */
 #landing-main-heading {
   margin-top: 0.75rem;
