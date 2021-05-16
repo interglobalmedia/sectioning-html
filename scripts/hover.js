@@ -35,6 +35,7 @@ const setBg = () => {
 	const quoteCloud = document.querySelector('.quote-cloud')
 	const randomColor = Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')
 	quoteCloud.style.backgroundColor = `#${randomColor}`
+	quoteCloud.style.opacity = `0.6`
 	console.log(`#${randomColor}`)
 	body.style.backgroundColor = `#${randomColor}`
 }
@@ -45,6 +46,8 @@ a random image appears at the same time, serving as a background for the quote.
 And if no image appears (immediately at least), then a random background color
 is generated and appears as the background of the quote instead. */
 quoteContainer.addEventListener('click', () => {
+	const body = document.querySelector('body')
+	const containerHeading = document.querySelector('h1')
 	const articleHeading = document.querySelector('h2')
 	const blockQuote = document.querySelector('blockquote')
 	const quoteCloud = document.querySelector('.quote-cloud')
@@ -52,11 +55,12 @@ quoteContainer.addEventListener('click', () => {
 	const randomImage = Math.floor(Math.random() * images.length)
 	articleHeading.innerHTML = ``
 	blockQuote.textContent = quotes[randomIndex]
-	quoteCloud.style.backgroundImage = `url(${dir}${images[randomImage]})`
-	quoteCloud.style.backgroundPosition = 'center center'
-	quoteCloud.style.backgroundSize = 'cover'
-	quoteCloud.style.height = `100%`
-	quoteCloud.style.maxHeight = `600px`
-	quoteCloud.style.outline = `6px double #000`
+	body.style.backgroundImage = `url(${dir}${images[randomImage]})`
+	body.style.backgroundPosition = 'center center'
+	body.style.backgroundSize = 'cover'
+	body.style.height = `100%`
+	body.style.maxHeight = `600px`
+	body.style.outline = `6px double #000`
+	containerHeading.innerHTML = ``
 	setBg()
 })
